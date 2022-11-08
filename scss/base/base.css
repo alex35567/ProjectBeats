@@ -1,0 +1,105 @@
+
+/* Базовый размер для страницы от высоты окна */
+html, body{
+    height: 100%;
+}
+
+
+/* Запрет дочернему компроненту выходить за рамки наружного */
+*, ::before, ::after {
+    box-sizing:  border-box;
+}
+
+
+/* Удаление лишних отступов в заголовках и параграфах */
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+/* Задание стилей заголовков для сайта */
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+/* Обычный стиль для поля адреса */
+address {
+    font-style: normal;
+}
+
+/* Удаление форматирования ссылок по умолчанию */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Удаление лишних отступов */
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none; 
+}
+
+/* Автоподстройка картинки по центру родительского элемента */
+img {
+    max-width: 100%;    
+    height: auto;
+}
+
+/* Отображение кнпки как ссылки */
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Отображение таблицы в привычном виде */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;  
+    background: #001821;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.42;  
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;    
+    min-width: 1141px;
+    min-height: 100%;    
+}
+
+.wrapper--main{
+    background: url(../../img/hero.jpg) center top no-repeat, url(../../img/bottom_back.jpg) center bottom 149px no-repeat;
+}
+
+.wrapper__content{
+      /* flex: 1; */
+      width: 100%;
+  }
+    .container {
+        margin: 0 auto;
+        /* position: relative;         */
+        width: 1141px;                          
+    }
+
+
