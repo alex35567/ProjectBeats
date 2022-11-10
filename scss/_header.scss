@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // width:$containerWidth;
-    width:915px;
+    width:$containerWidth;
+    // width:915px;
 }
 
 .header__items{
@@ -13,8 +13,8 @@
 }
 
 .header__menu-link{
-    font-family: 'Alegreya Sans', Helvetica, Arial,  sans-serif;  
-    font-size: 18px;
+    font-family: $Alegreya; 
+    font-size: $baseFontSize;
     &:hover{
         color: #dfb56d;
     }     
