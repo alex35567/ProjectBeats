@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // width:$containerWidth;
+    width:915px;
+}
+
+.header__items{
+    display: flex;
+    gap: 27px;   
+    
+}
+
+.header__menu-link{
+    font-family: 'Alegreya Sans', Helvetica, Arial,  sans-serif;  
+    font-size: 18px;
+    &:hover{
+        color: #dfb56d;
+    }     
+}
+
+.contacts__pic{
+    width: 14px;
+    height: 14px;
+    // margin-right: 6px;
+}

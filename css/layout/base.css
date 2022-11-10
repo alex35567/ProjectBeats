@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Задание стилей заголовков для сайта */
 h1 {
-    font-size: 72px;
+    font-size: 48px;
 }
 
 h2 {
@@ -69,37 +69,6 @@ table {
     border-spacing: 0;
 }
 
-body {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;  
-    background: #001821;
-    color: #FFFFFF;
-    font-size: 14px;
-    line-height: 1.42;  
-    margin: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 
-.wrapper {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;    
-    min-width: 1141px;
-    min-height: 100%;    
-}
-
-.wrapper--main{
-    background: url(../../img/hero.jpg) center top no-repeat, url(../../img/bottom_back.jpg) center bottom 149px no-repeat;
-}
-
-.wrapper__content{
-      /* flex: 1; */
-      width: 100%;
-  }
-    .container {
-        margin: 0 auto;
-        /* position: relative;         */
-        width: 1141px;                          
-    }
 
 
