@@ -562,7 +562,7 @@ table {
   position: relative;
 }
 .benefits__item:after {
-  content: url("/img/why/separator.png");
+  content: url("../img/why/separator.png");
   position: absolute;
   top: 55px;
   right: -40px;
