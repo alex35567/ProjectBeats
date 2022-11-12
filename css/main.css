@@ -405,7 +405,7 @@ table {
 }
 
 .container-intro {
-  background: url(../img/intro/beats1.png) right 43px/54% auto no-repeat;
+  background: url(./../img/intro/beats1.png) right 43px/54% auto no-repeat;
   color: #292929;
 }
 
@@ -747,12 +747,12 @@ table {
   background: #181818;
   width: 100%;
   color: white;
-  background: url(/img/order/cta.png) center center no-repeat;
+  background: url(./../img/order/cta.png) center center no-repeat;
   background-size: cover;
   position: relative;
 }
 .container-black:before {
-  content: url(/img/order/Polygon\ 2.png);
+  content: url(./../img/order/Polygon\ 2.png);
   position: absolute;
   width: 35px;
   height: 35px;
@@ -774,7 +774,7 @@ table {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible::before {
-  background: url(/img/order/checkmark.png) center center no-repeat;
+  background: url(./../img/order/checkmark.png) center center no-repeat;
 }
 
 .radio__elem {
@@ -953,11 +953,11 @@ table {
 }
 
 .social__ref--vk:after {
-  background: url("../../img/sprite/css_sprites.png") -60px -110px;
+  background: url("./../img/sprite/css_sprites.png") -60px -110px;
 }
 
 .social__ref--vk:before {
-  background: url("../../img/sprite/css_sprites.png") -10px -110px;
+  background: url("./../img/sprite/css_sprites.png") -10px -110px;
 }
 
 .social__ref--t:hover:after {
@@ -969,11 +969,11 @@ table {
 }
 
 .social__ref--t:after {
-  background: url("../../img/sprite/css_sprites.png") -110px -60px;
+  background: url("./../img/sprite/css_sprites.png") -110px -60px;
 }
 
 .social__ref--t:before {
-  background: url("../../img/sprite/css_sprites.png") -110px -10px;
+  background: url("./../img/sprite/css_sprites.png") -110px -10px;
 }
 
 .social__ref--f:hover:after {
@@ -985,11 +985,11 @@ table {
 }
 
 .social__ref--f:after {
-  background: url("../../img/sprite/css_sprites.png") -60px -10px;
+  background: url("./../img/sprite/css_sprites.png") -60px -10px;
 }
 
 .social__ref--f:before {
-  background: url("../../img/sprite/css_sprites.png") -10px -10px;
+  background: url("./../img/sprite/css_sprites.png") -10px -10px;
 }
 
 .social__ref--active:after {
@@ -1009,11 +1009,11 @@ table {
 }
 
 .social__ref--in:after {
-  background: url("../../img/sprite/css_sprites.png") -60px -60px;
+  background: url("./../img/sprite/css_sprites.png") -60px -60px;
 }
 
 .social__ref--in:before {
-  background: url("../../img/sprite/css_sprites.png") -10px -60px;
+  background: url("./../img/sprite/css_sprites.png") -10px -60px;
 }
 
 .contacts_desc--footer {
