@@ -1,0 +1,23 @@
+.container-black{
+    background: #181818;;
+    width: 100%;
+    color: white;
+    background: url(/img/order/cta.png) center center no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &:before {
+        content: url(/img/order/Polygon\ 2.png);
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        top: -23px;
+        left: 80.5%;
+    }
+
+}
+
+.order-section__title{
+    color: white;
+    margin-bottom: 51px;
+}

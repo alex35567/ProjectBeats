@@ -1,0 +1,33 @@
+
+.benefit{
+    text-align: center;
+}
+ 
+.benefit__pic-wrapper{
+    // color: #F2F5F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#F2F5F4;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;    
+    overflow: hidden;
+}
+
+.benefit__icon{
+    width: 68px;
+    height: 68px;
+}
+
+
+.benefit__desc{
+    // max-width: 247px;
+    line-height: 1.2;
+    padding: 0 13px;
+}
+
+.benefit__title{
+    padding-top: 22px;
+    color: $colorFontTitle;
+}

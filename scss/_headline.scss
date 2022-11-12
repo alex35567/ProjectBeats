@@ -1,0 +1,29 @@
+.headline{
+    margin-bottom: 19px;
+
+    &::before{
+        // display: block;
+        content:"  ";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 17px solid transparent;
+        border-right: 17px solid transparent;
+        border-bottom: 34px solid red;
+        // background:#C4C4C4;
+        bottom: 2%;        
+        left: -3%;
+        transform: rotate(227deg);
+
+    }
+}
+
+.headline__title{
+    margin-bottom: 8px;
+}
+
+.headline__subtitle{
+    max-width: 66%;  
+    text-align: center;
+    margin-bottom: 57px;
+}
