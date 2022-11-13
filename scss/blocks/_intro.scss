@@ -1,27 +1,18 @@
 
-.container-intro{    
-    // background: $colorBackGray url(../img/intro/beats1.png) right top no-repeat;\
-    background: url(./../img/intro/beats1.png) right 43px/54% auto no-repeat;
+.container-intro{        
+    background: url(./../img/intro/beats1.png) right -1px top 62% /54% auto no-repeat ;
     color: $colorFontTitle;
-    // width: 50px;
-    // height: 50px;
-    // background-image: url('../img/intro/фон.png');
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // display: block;
-    // background-position: right top;    
-    // border-radius:100%;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .intro{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    min-height: 580px;
-    padding-top: 87px;
-    position: relative;
-
-    
+    // display: flex;
+    flex-direction: row;
+    align-items: stretch;    
+    padding-top: 24px;
+    padding-bottom: 66px;
+    // position: relative;    
 
         &::before{
             // display: block;
@@ -36,14 +27,15 @@
 
         }
   }
-.intro__title{
+.intro-text__title{
     max-width: 43%;
     margin-bottom: 17px;
     text-transform: uppercase;
     line-height: 1.1;
+
 }
 
-.intro__desc{
+.intro-text__desc{
     max-width: 36%;
     margin-bottom: 34px;
     font-size: 21px;
@@ -54,11 +46,6 @@
 .features{
     display: flex;
     gap: 8px;
- 
-}
-.intro__features{
-    margin-top: auto;
-    padding-bottom: 61px;
 }
 
 
@@ -74,4 +61,5 @@
 
 .feature__desc{
     max-width: 114px;
+    line-height: 112%;
 }

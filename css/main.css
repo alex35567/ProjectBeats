@@ -328,10 +328,12 @@ h1, h2, h3, h4, h5, h6, p {
 /* Задание стилей заголовков для сайта */
 h1 {
   font-size: 48px;
+  line-height: 1.08;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 48px;
+  line-height: 1.08;
 }
 
 h3 {
@@ -378,12 +380,70 @@ table {
   border-spacing: 0;
 }
 
+body {
+  font-family: "Play", Helvetica, Arial, sans-serif;
+  /* font-family: 'Alegreya Sans';   */
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.42;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+}
+
+/* .wrapper--main{
+    background: url(../../img/hero.jpg) center top no-repeat, url(../../img/bottom_back.jpg) center bottom 149px no-repeat;
+}
+
+.wrapper__content{      
+      width: 100%;
+  } */
+.container {
+  margin: 0 auto;
+  width: 940px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-gray {
+  background: #F5F5F5;
+}
+
 /* @import url('https://fonts.googleapis.com/css2?family=Play:ital,wght@0.300;0,400;0,700;1,400&display=swap'); */
+.section {
+  height: 100vh;
+  width: 100%;
+  min-height: 622px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.section__title {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #292929;
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 915px;
+  padding-right: 25px;
+  width: 940px;
 }
 
 .header__items {
@@ -399,23 +459,34 @@ table {
   color: #dfb56d;
 }
 
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
 .contacts__pic {
   width: 14px;
   height: 14px;
+  margin-right: 6px;
+}
+
+.contacts__tel {
+  font-size: 18px;
+  line-height: 18px;
 }
 
 .container-intro {
-  background: url(./../img/intro/beats1.png) right 43px/54% auto no-repeat;
+  background: url(./../img/intro/beats1.png) right -1px top 62%/54% auto no-repeat;
   color: #292929;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .intro {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 580px;
-  padding-top: 87px;
-  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  padding-top: 24px;
+  padding-bottom: 66px;
 }
 .intro::before {
   content: "  ";
@@ -428,14 +499,14 @@ table {
   transform: rotate(-45deg);
 }
 
-.intro__title {
+.intro-text__title {
   max-width: 43%;
   margin-bottom: 17px;
   text-transform: uppercase;
   line-height: 1.1;
 }
 
-.intro__desc {
+.intro-text__desc {
   max-width: 36%;
   margin-bottom: 34px;
   font-size: 21px;
@@ -446,11 +517,6 @@ table {
 .features {
   display: flex;
   gap: 8px;
-}
-
-.intro__features {
-  margin-top: auto;
-  padding-bottom: 61px;
 }
 
 .feature {
@@ -465,6 +531,7 @@ table {
 
 .feature__desc {
   max-width: 114px;
+  line-height: 112%;
 }
 
 .btn {
@@ -507,22 +574,6 @@ table {
   color: black;
 }
 
-.section {
-  min-height: 686px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.section__title {
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  color: #292929;
-}
-
 .headline {
   margin-bottom: 19px;
 }
@@ -540,13 +591,14 @@ table {
 }
 
 .headline__title {
-  margin-bottom: 8px;
+  margin-bottom: 17px;
 }
 
 .headline__subtitle {
-  max-width: 66%;
+  max-width: 55%;
   text-align: center;
-  margin-bottom: 57px;
+  margin-bottom: 61px;
+  line-height: 1.18;
 }
 
 .benefits {
@@ -587,6 +639,10 @@ table {
   overflow: hidden;
 }
 
+.benefit__pic {
+  margin-bottom: 22px;
+}
+
 .benefit__icon {
   width: 68px;
   height: 68px;
@@ -598,20 +654,15 @@ table {
 }
 
 .benefit__title {
-  padding-top: 22px;
   color: #292929;
 }
 
-.container-white {
-  background: white;
-  width: 100%;
+.reviews-section__title {
+  margin-bottom: 32px;
 }
 
-.reviews-section {
-  margin-bottom: 0px;
-}
-
-.reviews:before {
+.reviews-section:before {
+  display: block;
   content: " ";
   position: absolute;
   width: 35px;
@@ -620,12 +671,27 @@ table {
   border-radius: 50%;
   overflow: hidden;
   bottom: -3px;
-  left: -2%;
+  left: 10%;
 }
 
 .reviews__display {
   background: #F8FAF9;
-  padding: 63px 28px 58px;
+  overflow: hidden;
+  margin-bottom: 13px;
+  padding: 42px;
+  position: relative;
+}
+.reviews__display::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  top: -55px;
+  transform: translateX(-50%);
+  width: 83px;
+  height: 83px;
+  background: white;
 }
 
 .reviews__display-inner {
@@ -656,12 +722,14 @@ table {
 }
 
 .reviews__text {
-  margin-bottom: 36px;
-  columns: #666666;
+  margin-bottom: 41px;
+  color: #666666;
+  line-height: 19px;
 }
 
 .reviews__author {
   font-size: 18px;
+  line-height: 21px;
   font-weight: bold;
   color: #292929;
 }
@@ -762,7 +830,7 @@ table {
 
 .order-section__title {
   color: white;
-  margin-bottom: 51px;
+  margin-bottom: 57px;
 }
 
 .radio {
@@ -785,8 +853,8 @@ table {
 }
 
 .radio__visible {
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
   position: relative;
   background: white;
   border-radius: 50%;
@@ -795,8 +863,8 @@ table {
 .radio__visible:before {
   content: " ";
   display: none;
-  width: 13px;
-  height: 13px;
+  width: 14px;
+  height: 14px;
   background: #E01F3D;
   border-radius: 50%;
   overflow: hidden;
@@ -1018,41 +1086,4 @@ table {
 
 .contacts_desc--footer {
   font-size: 11px;
-}
-
-body {
-  font-family: "Play", Helvetica, Arial, sans-serif;
-  /* font-family: 'Alegreya Sans';   */
-  color: #666666;
-  font-size: 16px;
-  line-height: 1.42;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.wrapper {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 1100px;
-  min-height: 100%;
-}
-
-/* .wrapper--main{
-    background: url(../../img/hero.jpg) center top no-repeat, url(../../img/bottom_back.jpg) center bottom 149px no-repeat;
-}
-
-.wrapper__content{      
-      width: 100%;
-  } */
-.container {
-  margin: 0 auto;
-  width: 915px;
-}
-
-.container-gray {
-  background: #F5F5F5;
-  width: 100%;
 }

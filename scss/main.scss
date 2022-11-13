@@ -1,78 +1,23 @@
+        @import "layout/vars";
+        @import "layout/normalize";
+        @import "layout/base";
+        @import "layout/font";
+        @import "blocks/section";
 
-        $wrapperWidth: 1100px;
-        $containerWidth: 915px;        
-        $baseFontSize: 18px;
-               
-        $colorBackGray:#F5F5F5;
-        $colorBackLightGray:#F8FAF9;
-        $colorFontTitle:#292929;
-        $backReviewsBlock:#F8FAF9;
-        $colorFontReviews:#666666;
-
-
-        $Alegreya:'Alegreya Sans', Helvetica, Arial,  sans-serif; 
-        $Play:'Play', Helvetica, Arial, sans-serif; 
-
-        $z_fixed-menu:100;
-
-        @import "./../css/layout/normalize";
-        @import "./../css/layout/base";
-        @import "./../css/layout/font";      
-
-        @import "./../scss/header";
-        @import "./../scss/intro";
-        @import "./../scss/button";
-        @import "./../scss/section";
-        @import "./../scss/headline";
-        @import "./../scss/benefits";
-        @import "./../scss/benefit";
-        @import "./../scss/reviews";
-        @import "./../scss/interactive-avatar";
-        @import "./../scss/form";
-        @import "./../scss/order";
-        @import "./../scss/radio";
-        @import "./../scss/fixed-menu";
-        @import "./../scss/map";
-        @import "./../scss/footer";
+        @import "blocks/header";
+        @import "blocks/intro";
+        @import "blocks/button";        
+        @import "blocks/headline";
+        @import "blocks/benefits";
+        @import "blocks/benefit";
+        @import "blocks/reviews";
+        @import "blocks/interactive-avatar";
+        @import "blocks/form";
+        @import "blocks/order";
+        @import "blocks/radio";
+        @import "blocks/fixed-menu";
+        @import "blocks/map";
+        @import "blocks/footer";
          
 
-        body {                
-                font-family: $Play;
-                /* font-family: 'Alegreya Sans';   */
-                // background:$colorBackLightGray;
-                color:$colorFontReviews;
-                font-size: 16px;
-                line-height: 1.42;  
-                margin: 0;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-            }
-            
-            .wrapper {                
-                overflow: hidden;
-                display: flex;
-                flex-direction: column;
-                align-items: center;    
-                min-width: 1100px;
-                min-height: 100%;    
-            }
-            
-            /* .wrapper--main{
-                background: url(../../img/hero.jpg) center top no-repeat, url(../../img/bottom_back.jpg) center bottom 149px no-repeat;
-            }
-            
-            .wrapper__content{      
-                  width: 100%;
-              } */ 
-            
-              
-            .container {
-                margin: 0 auto;                    
-                width:$containerWidth;                          
-            } 
-
-            .container-gray{
-                background:$colorBackGray;
-                width: 100%;
-
-            }
+       
