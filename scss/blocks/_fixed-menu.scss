@@ -6,7 +6,7 @@
 }
 
 .fixed-menu__item{
-    margin-bottom: 5px;
+    margin-bottom: calc( 5px/$baseFontSize * 1rem);
 
     &--active{
         .fixed-menu__link{
@@ -36,18 +36,18 @@
 
 
 .fixed-menu__link{
-    width: 16px;
-    height: 16px;
+    width: calc( 16px/$baseFontSize * 1rem);
+    height: calc( 16px/$baseFontSize * 1rem);
     border-radius: 50%;
-    border: 1px solid transparent;
+    border: calc( 1px/$baseFontSize * 1rem) solid transparent;
     display: block;
     position: relative;
 
     &::before{
         content: "";
         display: block;
-        width: 9px;
-        height: 9px;
+        width: calc( 9px/$baseFontSize * 1rem);
+        height: calc( 9px/$baseFontSize * 1rem);
         border-radius: 50%;
         background:$colorFontTitle;
         opacity: 0.6;
@@ -56,4 +56,14 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+    @include tablets{
+        display: none;
+    }
+
+    @include phones{
+        display: none;
+    }
+
+
 }

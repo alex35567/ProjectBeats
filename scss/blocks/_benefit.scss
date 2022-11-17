@@ -9,26 +9,27 @@
     align-items: center;
     justify-content: center;
     background:#F2F5F4;
-    width: 128px;
-    height: 128px;
+    width: calc( 128px/$baseFontSize * 1rem);
+    height: calc( 128px/$baseFontSize * 1rem);
     border-radius: 50%;    
     overflow: hidden;
 }
 
 .benefit__pic{
-    margin-bottom: 22px;    
+    margin-bottom: calc( 22px/$baseFontSize * 1rem);
+    
 }
 
 .benefit__icon{
-    width: 68px;
-    height: 68px;
+    width: calc( 68px/$baseFontSize * 1rem);
+    height: calc( 68px/$baseFontSize * 1rem);
 }
 
 
 .benefit__desc{
     // max-width: 247px;
     line-height: 1.2;
-    padding: 0 13px;
+    padding: rem(14px) calc( 13px/$baseFontSize * 1rem);
 }
 
 .benefit__title{    

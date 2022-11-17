@@ -1,6 +1,13 @@
-$wrapperWidth: 1100px;
-$containerWidth: 940px;  //915px      
-$baseFontSize: 18px;
+
+$baseFontSize: 16px;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+// $wrapperWidth: calc( 1100px/$baseFontSize * 1rem);
+// $containerWidth: calc(940px/$baseFontSize * 1rem);  //915px      
+$containerWidth:  940px;
        
 $colorBackGray:#F5F5F5;
 $colorBackLightGray:#F8FAF9;

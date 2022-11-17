@@ -1,6 +1,6 @@
 .interactive-avatar{
-    width: 74px;
-    height: 74px;
+    width: calc( 74px/$baseFontSize * 1rem);
+    height: calc( 74px/$baseFontSize * 1rem);
     border: 4px solid transparent;
     border-radius: 50%;
     overflow: hidden;

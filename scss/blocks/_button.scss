@@ -1,7 +1,7 @@
 .btn {
     display: inline-block;
     border: none;
-    border-radius: 35px;    
+    border-radius: calc( 35px/$baseFontSize * 1rem);    
     font-weight: bold;
     text-transform: uppercase;                          
 
@@ -9,8 +9,8 @@
 
 
 .btn--theme-primary{   
-    font-size: 16px; 
-    padding: 14px 38px;
+    font-size: calc( 16px/$baseFontSize * 1rem); 
+    padding: calc( 14px/$baseFontSize * 1rem) calc( 38px/$baseFontSize * 1rem);
     border: 1px solid #F5170E;  
     background: #F5170E;                                        
     color: white;    
@@ -57,7 +57,7 @@
 
 
 .btn--theme-black{    
-    padding: 18px 40px;
+    padding: calc( 18px/$baseFontSize * 1rem) calc( 40px/$baseFontSize * 1rem);
     // border: 1px solid #2B2B2B; 
     background: transparent;                                   
     color: white;    

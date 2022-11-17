@@ -2,11 +2,10 @@
 .section{
     height: 100vh;    
     width: 100%;
-    min-height: 622px;
-    // min-height: 686px;
+    min-height: calc( 622px/$baseFontSize * 1rem);    
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    // justify-content: center;    
     align-items: center;
     position: relative;
 }

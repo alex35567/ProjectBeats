@@ -1,6 +1,18 @@
 .form{
     display: flex;
-    gap: 26px;
+    gap: calc( 26px/$baseFontSize * 1rem);
+
+    @include tablets{
+        flex-direction: column;
+        padding: 0 17%;
+        gap: rem(14px);
+    }
+
+    @include phones{
+        flex-direction: column;
+        padding: 0 17%;
+        gap: rem(14px);
+    }
 }
 
 .form__col{
@@ -9,8 +21,8 @@
 
 .form__row{
     display: flex;
-    gap: 16px;
-    margin-bottom: 14px;
+    gap: calc( 16px/$baseFontSize * 1rem);
+    margin-bottom: calc( 14px/$baseFontSize * 1rem);
 
     &:last-child{
         margin-bottom: 0px;
@@ -19,12 +31,13 @@
 
 .form__block{
  flex: 1; 
+ 
 }
 
 .form__input{
     width: 100%;
     border: none;
-    padding: 17px 12px;
+    padding: calc( 17px/$baseFontSize * 1rem) calc( 12px/$baseFontSize * 1rem);
     border: solid 3px transparent;
     border-radius: 4px;
 
@@ -34,28 +47,78 @@
     }
 
     &--textarea{
-        height: 152px;
+        height: calc( 152px/$baseFontSize * 1rem);
         resize: none;
     }
 
     &--active{
         border-color: #E01F3D;         
     }
+
+    @include tablets{
+        padding: rem(7px) rem(7px);
+    }
+
+    @include phones{
+        padding: rem(7px) rem(7px);
+    }
+
+    @include tablets{
+        &--textarea{
+            height: rem(81px);
+        }
+    }
+
+    @include phones{
+        display: inline-flex;
+    }
+
+
 }
 
 .form__controls-wrapper{
-    margin-top: 31px;
+    margin-top: calc( 31px/$baseFontSize * 1rem);
 
+    @include tablets{
+        margin-top: rem(16px);
+    }
+
+    @include phones{
+        margin-top: rem(16px);
+    }
 }
+
+
 
 .form__controls{
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
-    margin-bottom: 16px;
+    gap: calc( 24px/$baseFontSize * 1rem);
+    margin-bottom: calc( 16px/$baseFontSize * 1rem);
+
+    @include tablets{
+        gap: rem(14px);
+    }
+
+    @include phones{
+        gap: rem(14px);
+    }
 }
 
 
 .form__buttons{
-    margin-top: 52px;
+    margin-top: calc( 52px/$baseFontSize * 1rem);
+
+    @include tablets{
+        display: flex;
+        justify-content: center;
+        margin-top: 45px;
+    }
+
+    @include phones{
+        display: flex;
+        justify-content: center;
+        margin-top: 45px;
+    }
+
 }

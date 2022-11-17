@@ -9,9 +9,9 @@
     &:before {
         content: url(./../img/order/Polygon\ 2.png);
         position: absolute;
-        width: 35px;
-        height: 35px;
-        top: -23px;
+        width: calc( 35px/$baseFontSize * 1rem);
+        height: calc( 35px/$baseFontSize * 1rem);
+        top: calc( -23px/$baseFontSize * 1rem);
         left: 80.5%;
     }
 
@@ -19,5 +19,14 @@
 
 .order-section__title{
     color: white;
-    margin-bottom: 57px;
+    margin-bottom: calc( 57px/$baseFontSize * 1rem);
+
+    @include tablets{
+        margin-bottom: rem(29px);
+    }
+
+    @include phones{
+        margin-bottom: rem(29px);
+    }
+
 }

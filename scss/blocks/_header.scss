@@ -1,21 +1,69 @@
+
 .header{
     display: flex;
-    align-items: center;
+    // align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    padding-right: 25px;
-    width:$containerWidth;
+    padding-right: calc( 25px/$baseFontSize * 1rem);
+    width:100%;
+
+    @include tablets{     
+        padding-right: rem(5px);
+    }
+
+    @include phones{
+        padding-right: rem(5px);
+     
+    }
     // width:915px;
 }
 
+
+.header__menu {
+
+    margin: 0 rem(30px);
+    padding-top: rem(9px);
+
+    @include tablets{
+        display: none;
+    }
+
+    @include phones{
+        display: none;
+    }
+
+}
+
+
+.contacts.header__contacts{
+
+    padding-top: rem(9px);    
+
+    @include tablets{
+        display: none;
+    }
+
+    @include phones{
+        display: none;
+    }
+
+}
+
+
 .header__items{
     display: flex;
-    gap: 27px;   
+    flex-wrap: wrap;
+    justify-content: center;
+    // gap: calc( 27px/$baseFontSize * 1rem);       
+    column-gap: calc( 27px/$baseFontSize * 1rem);
+    row-gap: calc( 18px/$baseFontSize * 1rem);
     
 }
 
 .header__menu-link{
     font-family: $Alegreya; 
     font-size: $baseFontSize;
+    white-space: nowrap;
     &:hover{
         color: #dfb56d;
     }     
@@ -27,12 +75,14 @@
 }
 
 .contacts__pic{
-    width: 14px;
-    height: 14px;
-    margin-right: 6px;
+    width: calc( 14px/$baseFontSize * 1rem);
+    height: calc( 14px/$baseFontSize * 1rem);
+    margin-right: calc( 6px/$baseFontSize * 1rem);
+    flex-shrink: 0;
 }
 
 .contacts__tel{
-    font-size: 18px;
-    line-height: 18px;
+    font-size: calc( 18px/$baseFontSize * 1rem);
+    line-height: calc( 18px/$baseFontSize * 1rem);
+    white-space: nowrap;
 }
