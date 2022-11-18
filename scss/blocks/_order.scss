@@ -26,7 +26,9 @@
     }
 
     @include phones{
-        margin-bottom: rem(29px);
+        margin-bottom: rem(36px);
+        font-size: rem(32px);
+        line-height: rem(36px);
     }
 
 }

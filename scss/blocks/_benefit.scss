@@ -1,6 +1,11 @@
 
 .benefit{
     text-align: center;
+
+    @include phones{
+        text-align: start;
+    }
+
 }
  
 .benefit__pic-wrapper{
@@ -17,12 +22,23 @@
 
 .benefit__pic{
     margin-bottom: calc( 22px/$baseFontSize * 1rem);
-    
+    @include phones{
+        margin-bottom: 0px;
+    }
+
 }
 
 .benefit__icon{
     width: calc( 68px/$baseFontSize * 1rem);
     height: calc( 68px/$baseFontSize * 1rem);
+
+    @include phones{
+        width: rem(60px);
+        height: rem(60px);
+
+    }
+
+
 }
 
 
@@ -30,8 +46,20 @@
     // max-width: 247px;
     line-height: 1.2;
     padding: rem(14px) calc( 13px/$baseFontSize * 1rem);
+
+    @include phones{
+        padding: 0px;
+    }
+
 }
 
 .benefit__title{    
     color: $colorFontTitle;
+}
+
+.benefit__text{
+    @include phones{
+        padding-left: 9px;
+    }
+
 }

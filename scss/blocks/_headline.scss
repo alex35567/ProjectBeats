@@ -12,10 +12,19 @@
         border-bottom: calc( 34px/$baseFontSize * 1rem) solid red;
         // background:#C4C4C4;
         bottom: 2%;        
-        left: -3%;
+        left: 9%;
         transform: rotate(227deg);
 
     }
+
+    @include phones{
+        &::before{
+            // bottom: 23%;        
+            left: 7%;    
+        }
+    }
+
+
 }
 
 .headline__title{
@@ -25,7 +34,9 @@
     }
 
     @include phones{
-        margin-bottom: calc( 10px/$baseFontSize * 1rem);  //8px
+        margin-bottom: rem(12px);
+        font-size: rem(32px);
+        line-height: rem(36px);
     }
 }
 
@@ -42,8 +53,8 @@
     }
 
     @include phones{
-        max-width: 75%;
-        margin-bottom: calc( 55px/$baseFontSize * 1rem);//57px;
+        max-width: 100%;
+        margin-bottom: 46px;
 
     }
      

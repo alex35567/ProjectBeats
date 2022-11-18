@@ -10,7 +10,7 @@
 
     @include phones{
         flex-direction: column;
-        padding: 0 17%;
+        padding: 0 0;
         gap: rem(14px);
     }
 }
@@ -101,7 +101,7 @@
     }
 
     @include phones{
-        gap: rem(14px);
+        justify-content: center;
     }
 }
 

@@ -7,7 +7,8 @@
     }
 
     @include phones{
-        column-gap: 0;
+        // column-gap: 0;
+        flex-direction: column;
     }
 
 }
@@ -37,14 +38,17 @@
         &:after{
            display: none;
         }
-        min-width: calc( 258px/$baseFontSize * 1rem);
+        min-width: rem(258px);        
     }
 
     @include phones{
         &:after{
             display: none;
          }
-         min-width: calc( 258px/$baseFontSize * 1rem);
+         min-width: rem(480px);
+         flex-direction: row;
+         margin-bottom: rem(40px);
+
  
     }
 

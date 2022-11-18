@@ -1,5 +1,11 @@
 .reviews-section__title{
     margin-bottom: calc( 32px/$baseFontSize * 1rem);
+
+    @include phones{     
+        font-size: rem(32px);
+        line-height: rem(36px);        
+        margin-bottom: rem(27px);
+    }
 }
 
 .reviews-section{
@@ -16,6 +22,14 @@
         bottom: calc( -3px/$baseFontSize * 1rem);
         left: 10%;        
     }
+
+    @include phones{
+        &:before {
+            bottom: rem(-16px);
+        }
+    }
+
+
 }
 
 .reviews__display{
@@ -43,10 +57,12 @@
         padding: rem(55px) rem(55px) rem(36px) rem(55px);
     }
 
-    // @include phones{
-    //     margin-bottom: calc( 0px/$baseFontSize * 1rem); 
-    //     padding: rem(55px) rem(55px) rem(36px) rem(55px);
-    // }
+    @include phones{
+        &::before{
+            display: none;        
+        }
+        padding: rem(55px) 0px rem(76px);
+    }
 
 }
 
@@ -102,10 +118,10 @@
         line-height: rem(18.51px);
     }
 
-    // @include phones{
-    //     padding: calc( 38px/$baseFontSize * 1rem) calc( 109px/$baseFontSize * 1rem) 0 calc( 37px/$baseFontSize * 1rem);
-    //     line-height: rem(18.51px);
-    // }
+    @include phones{
+        padding: rem(28px) 0px 0px;
+    
+    }
 
 }
 
@@ -113,6 +129,12 @@
     font-weight: bold;    
     margin-bottom: calc( 22px/$baseFontSize * 1rem);
     color: $colorFontTitle;    
+
+    @include phones{
+        margin-bottom: rem(14px);
+    }
+
+
 }
 
 .reviews__text{
@@ -124,9 +146,9 @@
         margin-bottom: calc( 17px/$baseFontSize * 1rem);
     }
 
-    // @include phones{
-    //     margin-bottom: calc( 17px/$baseFontSize * 1rem);
-    // }
+    @include phones{
+        margin-bottom: rem(51px);
+    }
 
 }
 
