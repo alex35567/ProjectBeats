@@ -9,6 +9,7 @@
     @include phones{
         // column-gap: 0;
         flex-direction: column;
+        padding-left: rem(43px);
     }
 
 }
