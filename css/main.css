@@ -760,6 +760,7 @@ body {
 @media screen and (max-width: 480px) {
   .benefits {
     flex-direction: column;
+    padding-left: 2.6875rem;
   }
 }
 
@@ -855,7 +856,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .benefit__text {
-    padding-left: 9px;
+    padding: 0px 3rem 0 0.75rem;
   }
 }
 

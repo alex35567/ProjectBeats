@@ -59,7 +59,8 @@
 
 .benefit__text{
     @include phones{
-        padding-left: 9px;
+        //padding-left: 9px;
+        padding: 0px rem(48px) 0 rem(12px);
     }
 
 }
