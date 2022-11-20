@@ -1,26 +1,30 @@
 
 .container--footer {
-    margin-top: auto;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;         
-    padding-bottom: calc( 18px/$baseFontSize * 1rem);
-    /* background: #001821; */
-    // color: white;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: rem(18px) 0;
+
+    @include phones{
+        padding: rem(30px);
+    }
+
+
+    @include phones{
+        flex-direction: column;
+    }
+
 
 }
 
 .footer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;  
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     
-    // align-items: center;
-    padding-top: calc( 18px/$baseFontSize * 1rem);   
-    
-    @include phones{
-        flex-direction: column;
-    }
+    background-color: white;
 
 }
 
@@ -46,6 +50,7 @@
 .contacts__desc{
     font-size: calc( 18px/$baseFontSize * 1rem);
     line-height: calc( 24px/$baseFontSize * 1rem);
+    text-align: center;
 
     @include phones{
         margin-bottom: 12px;
@@ -76,7 +81,7 @@
     .social__item {
          align-items: center;
         text-decoration: none;
-        margin-right: calc( 10px/$baseFontSize * 1rem);
+        margin-right: rem(13px);
     }
     .social__item:last-child {
         margin-right: 0px;

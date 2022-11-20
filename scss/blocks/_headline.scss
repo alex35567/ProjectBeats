@@ -1,6 +1,4 @@
-.headline{
-    margin-bottom: calc( 19px/$baseFontSize * 1rem);
-
+.headline{  
     &::before{
         // display: block;
         content:"  ";
@@ -54,7 +52,7 @@
 
     @include phones{
         max-width: 100%;
-        margin-bottom: 46px;
+        margin-bottom: rem(53px);
 
     }
      

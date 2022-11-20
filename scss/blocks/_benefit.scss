@@ -45,7 +45,8 @@
 .benefit__desc{
     // max-width: 247px;
     line-height: 1.2;
-    padding: rem(14px) calc( 13px/$baseFontSize * 1rem);
+    // padding: rem(14px) calc( 13px/$baseFontSize * 1rem);
+    padding: rem(4px) calc( 13px/$baseFontSize * 1rem);
 
     @include phones{
         padding: 0px;
@@ -55,12 +56,16 @@
 
 .benefit__title{    
     color: $colorFontTitle;
+    @include phones{
+        font-size: rem(24px);
+        line-height: rem(28px);        
+    }
 }
 
 .benefit__text{
     @include phones{
         //padding-left: 9px;
-        padding: 0px rem(48px) 0 rem(12px);
+        padding: 0px rem(13px) 0 rem(12px);
     }
 
 }

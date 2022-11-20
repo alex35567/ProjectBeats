@@ -53,15 +53,15 @@
     }
 
     @include tablets{
-        margin-bottom: calc( 0px/$baseFontSize * 1rem);         
-        padding: rem(55px) rem(55px) rem(36px) rem(55px);
+        margin-bottom: rem(34px);         
+        padding: rem(55px) rem(55px) rem(40px) rem(55px);
     }
 
     @include phones{
         &::before{
             display: none;        
         }
-        padding: rem(55px) 0px rem(76px);
+        padding: rem(55px) 0px rem(35px);
     }
 
 }
@@ -115,6 +115,7 @@
 
     @include tablets{
         padding: calc( 38px/$baseFontSize * 1rem) calc( 0px/$baseFontSize * 1rem) calc( 37px/$baseFontSize * 1rem);
+        padding: rem(38px) 0 0;
         line-height: rem(18.51px);
     }
 
@@ -147,7 +148,7 @@
     }
 
     @include phones{
-        margin-bottom: rem(51px);
+        margin-bottom: rem(12px);
     }
 
 }

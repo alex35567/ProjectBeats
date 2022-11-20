@@ -18,6 +18,12 @@
     // width:915px;
 }
 
+.header__pic{
+    width: rem(39px);
+    height: rem(39px);
+    fill: #E01F3D;
+}
+
 
 .header__menu {
 
@@ -62,7 +68,7 @@
 
 .header__menu-link{
     font-family: $Alegreya; 
-    font-size: $baseFontSize;
+    font-size: rem(18px);
     white-space: nowrap;
     &:hover{
         color: #dfb56d;
