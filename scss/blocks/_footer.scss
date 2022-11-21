@@ -6,8 +6,10 @@
     flex-direction: row;
     padding: rem(18px) 0;
 
-    @include phones{
-        padding: rem(30px);
+    @include tablets{
+        // padding: rem(30px);
+        padding-left: rem(30px);
+        padding-right: rem(36px);
     }
 
 

@@ -1318,9 +1318,10 @@ body {
   flex-direction: row;
   padding: 1.125rem 0;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .container--footer {
-    padding: 1.875rem;
+    padding-left: 1.875rem;
+    padding-right: 2.25rem;
   }
 }
 @media screen and (max-width: 480px) {
