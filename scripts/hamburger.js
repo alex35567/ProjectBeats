@@ -7,11 +7,15 @@ const body = document.querySelector('body');
 hamb_btn.addEventListener('click', function(e){
     e.preventDefault();
 
-    hamb_elems.forEach(function(elem,i){
+    // делаем крестик
+    hamb_elems.forEach(function(elem,i){        
         elem.classList.toggle('plank-'+(i+1).toString());
     });  
+
+    //показвает меню
     header_menu.classList.toggle('active'); 
 
+    //блокировка прокрутки 
     if (body.style.overflow.includes('hidden')) body.style.overflow='scroll';
     else body.style.overflow ='hidden';
 

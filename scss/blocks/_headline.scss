@@ -9,7 +9,8 @@
         border-right: calc( 17px/$baseFontSize * 1rem) solid transparent;
         border-bottom: calc( 34px/$baseFontSize * 1rem) solid red;
         // background:#C4C4C4;
-        bottom: 2%;        
+        bottom: -2%;        
+        z-index: 4;
         left: 9%;
         transform: rotate(227deg);
 

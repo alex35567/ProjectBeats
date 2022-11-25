@@ -751,7 +751,8 @@ body {
   border-left: 1.0625rem solid transparent;
   border-right: 1.0625rem solid transparent;
   border-bottom: 2.125rem solid red;
-  bottom: 2%;
+  bottom: -2%;
+  z-index: 4;
   left: 9%;
   transform: rotate(227deg);
 }
@@ -1483,4 +1484,229 @@ body {
   margin-top: 0px;
   transition: transform 0.3s;
   background-color: rgba(255, 255, 255, 0.7);
+}
+
+.products-section {
+  background: #F8FAF9;
+}
+
+.products {
+  display: flex;
+  align-items: center;
+}
+.products::before {
+  content: "  ";
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #C4C4C4;
+  bottom: -0.625rem;
+  left: 79%;
+  transform: rotate(-61deg);
+}
+
+.products__arrow {
+  font-size: 3.125rem;
+  color: black;
+  margin-top: 3.3125rem;
+}
+@media screen and (max-width: 768px) {
+  .products__arrow {
+    margin-top: -23.125rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .products__arrow {
+    margin-top: -19.5625rem;
+  }
+}
+
+.products__arrow-prev {
+  margin-right: 1.75rem;
+}
+@media screen and (max-width: 768px) {
+  .products__arrow-prev {
+    margin-right: 0;
+  }
+}
+
+.product {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .product {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.product__image {
+  max-width: 47%;
+  margin-right: 3.5625rem;
+}
+@media screen and (max-width: 768px) {
+  .product__image {
+    margin: 0 0 2.5rem 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product__image {
+    max-width: 74%;
+    margin: 0 0 2.125rem 0;
+  }
+}
+
+.product__properties {
+  width: 5.6875rem;
+  height: 5.6875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9A9A9A;
+  margin-bottom: 1.5625rem;
+}
+@media screen and (max-width: 768px) {
+  .product__properties {
+    display: none;
+  }
+}
+
+.product__properites-icon {
+  width: 2.625rem;
+  height: 2.625rem;
+}
+
+.product__title {
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+  text-transform: uppercase;
+  color: #292929;
+  margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .product__title {
+    text-align: center;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    margin-bottom: 0.9375rem;
+  }
+}
+
+.product__desc {
+  max-width: 23rem;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  margin-bottom: 1.8125rem;
+}
+@media screen and (max-width: 768px) {
+  .product__desc {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 1.875rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product__desc {
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.product__prop {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 2.8125rem;
+  margin-bottom: 1.5rem;
+}
+
+.product__prop-desc {
+  min-width: 6.5rem;
+}
+
+.product__prop-text {
+  font-size: 1rem;
+  line-height: 1.1875rem;
+}
+
+.product__prop-value {
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  color: black;
+}
+
+.product__order {
+  display: flex;
+  column-gap: 1.4375rem;
+}
+@media screen and (max-width: 768px) {
+  .product__order {
+    column-gap: 2.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .product__order {
+    column-gap: 1.625rem;
+  }
+}
+
+.product__price {
+  font-size: 2.25rem;
+  line-height: 3.75rem;
+  color: #151515;
+}
+@media screen and (max-width: 768px) {
+  .product__price {
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .product__price {
+    font-size: 2rem;
+  }
+}
+
+.drop-info {
+  position: absolute;
+  min-width: 273px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.drop-info.active {
+  opacity: 1;
+}
+
+.drop-info__list {
+  padding: 24px 25px 24px 26px;
+}
+
+.drop-info__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.drop-info__icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.drop-info__value {
+  margin-left: auto;
 }
