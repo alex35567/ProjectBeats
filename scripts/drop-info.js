@@ -30,6 +30,5 @@ drpInf_btn.addEventListener('click', function(e){
 
     // //показвает меню
     // drpInf_menu.classList.toggle('active');     
-
 });
 
