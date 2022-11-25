@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveSassCompile.settings.autoprefix": [
+		
+		],
+		"liveSassCompile.settings.generateMap": false,
+		"liveSassCompile.settings.formats": [
+
+			{
+				"format": "expanded",
+				"extensionName": ".css",
+				"savePath": "/css",
+				"savePathReplacementPairs": null
+			}
+		],
+		"liveServer.settings.multiRootWorkspaceName": "ProjectBeats"
+	}
+}

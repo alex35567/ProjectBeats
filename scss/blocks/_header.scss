@@ -28,15 +28,35 @@
 .header__menu {
 
     margin: 0 rem(30px);
-    padding-top: rem(9px);
-
+    padding-top: rem(9px);    
+     
     @include tablets{
-        display: none;
+        display: none;    
+        opacity: 0;    
+        left:-100%;    
+        position: fixed;   
+        z-index: 4;   //это для того чтобы кнопка была над менюшкой....      
+        width: 100%;                    
+        top: 0;
+        height: 100vh;
+        margin: 0;
+        display: flex;            
+        justify-content: center;
+        align-items: center;
+        background-color: #313131;  
+        color: white; 
+        transition: left 0.4s, opacity 0.4s;        
+
+        &.active{
+            opacity: 1;         
+            left: 0;  
+        }
+
     }
 
-    @include phones{
-        display: none;
-    }
+    // @include phones{
+    //     display: none;
+    // }
 
 }
 
@@ -63,8 +83,21 @@
     // gap: calc( 27px/$baseFontSize * 1rem);       
     column-gap: calc( 27px/$baseFontSize * 1rem);
     row-gap: calc( 18px/$baseFontSize * 1rem);
+
+    @include tablets{
+        flex-direction: column;
+        align-items: center;        
+        gap: 0;
+        padding: 135px 234px 328px;
+    }
     
+    @include phones{   
+        padding: 135px 90px 135px;
+    }
+
 }
+
+
 
 .header__menu-link{
     font-family: $Alegreya; 
@@ -73,6 +106,13 @@
     &:hover{
         color: #dfb56d;
     }     
+
+    @include tablets{
+        font-size: rem(36px);
+        line-height: rem(72px);
+        font-family: $Play;
+    }
+
 }
 
 .contacts{
