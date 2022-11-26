@@ -1564,6 +1564,16 @@ body {
   }
 }
 
+.product__props-box {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 1.5625rem;
+}
+.product__props-box:hover .drop-info {
+  opacity: 1;
+  left: 100%;
+}
+
 .product__properties {
   width: 5.6875rem;
   height: 5.6875rem;
@@ -1571,7 +1581,6 @@ body {
   justify-content: center;
   align-items: center;
   background: #9A9A9A;
-  margin-bottom: 1.5625rem;
 }
 @media screen and (max-width: 768px) {
   .product__properties {
@@ -1678,17 +1687,16 @@ body {
 
 .drop-info {
   position: absolute;
+  top: 0;
+  left: -9999px;
   min-width: 273px;
   border-radius: 4px;
-  background: rgb(255, 255, 255);
+  background: #d5d5d5;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5rem;
   color: black;
   opacity: 0;
   transition: opacity 0.5s;
-}
-.drop-info.active {
-  opacity: 1;
 }
 
 .drop-info__list {

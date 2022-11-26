@@ -1,20 +1,33 @@
 
 .drop-info{
-    position: absolute;
-    min-width: 273px;
-    border-radius: 4px;
-    // background: rgba(255, 255, 255, 0.8);
-    background: rgba(255, 255, 255, 1);
-    font-size: 16px;
-    line-height: 24px;
-    color: black;    
-    // right: 10000px;
-    opacity: 0;
-    transition: opacity 0.5s;
+    position: absolute; 
+    top: 0; 
+    left: -9999px; 
+    min-width: 273px; 
+    border-radius: 4px; 
+    background: #d5d5d5; 
+    font-size: 16px; 
+    line-height: rem(24px); 
+    color: black;     
+    opacity: 0; 
+    transition: opacity 0.5s; 
 
-    &.active{
-        opacity: 1;
-    }
+
+    // position: absolute;
+    // min-width: 273px;
+    // border-radius: 4px;
+    // // background: rgba(255, 255, 255, 0.8);
+    // background: rgba(255, 255, 255, 1);
+    // font-size: 16px;
+    // line-height: 24px;
+    // color: black;    
+    // // right: 10000px;
+    // opacity: 0;
+    // transition: opacity 0.5s;
+
+    // &.active{
+    //     opacity: 1;
+    // }
 
 }
 

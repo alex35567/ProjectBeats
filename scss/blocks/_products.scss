@@ -81,14 +81,26 @@
 
 }
 
-.product__properties{
+
+.product__props-box { 
+    display: inline-block; 
+    position: relative; 
+    margin-bottom: rem(25px); 
+ 
+    &:hover .drop-info { 
+        opacity: 1; 
+        left: 100%; 
+    } 
+} 
+
+.product__properties{   
     width: rem(91px);
     height: rem(91px);
     display: flex;
     justify-content: center;
     align-items: center;
     background: #9A9A9A;
-    margin-bottom: rem(25px);
+    // margin-bottom: rem(25px);
     
     @include tablets{
         display: none;
