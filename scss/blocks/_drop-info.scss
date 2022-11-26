@@ -10,7 +10,7 @@
     color: black;    
     // right: 10000px;
     opacity: 0;
-    transition:opacity 1s;
+    transition: opacity 0.5s;
 
     &.active{
         opacity: 1;
