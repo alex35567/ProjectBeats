@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beats</title>
-    <link rel="stylesheet" href="css\main.css">
+    <link rel="stylesheet" href="css\main.css">         
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">       
+
 </head>
 <body>
 
@@ -16,7 +18,7 @@
                     <div class="header__logo">                    
                         <a href="" class="header__logo-link">
                             <!-- <img src=".\img\header\logo.png" alt="logo" class="header__pic"> -->
-                            <svg class="header__pic"> <use xlink:href="./img/svg/sprite.svg#logo"></use> </svg>
+                            <svg class="header__pic"> <use xlink:href="./img/svg/sprite.svg#logo"></use> </svg>                            
                         </a>
                     </div>
 
@@ -227,6 +229,69 @@
                                     </div>
                                 </div>
                             </li>
+
+                            <li class="product">
+                                <img src="./img/products/product2.png" alt="product_image" class="product__image">
+                                <div class="product__content">
+                                  <div class="product__props-box">
+
+                                    <a href="" class="product__properties">
+                                        <svg class="product__properites-icon"> <use xlink:href="./img/svg/sprite.svg#gear"></use> </svg>        
+                                    </a>
+                                    <div class="drop-info">
+                                        <ul class="drop-info__list">
+                                            <li class="drop-info__item">
+                                                <svg class="drop-info__icon"> <use xlink:href="./img/svg/sprite.svg#bt"></use> </svg>   
+                                                <div class="drop-info__desc">Bluetooth</div>     
+                                                <div class="drop-info__value">4.0</div>
+                                            </li>
+                                            <li class="drop-info__item">
+                                                <svg class="drop-info__icon"> <use xlink:href="./img/svg/sprite.svg#nut"></use> </svg>   
+                                                <div class="drop-info__desc">Дальность</div>     
+                                                <div class="drop-info__value">10 м</div>
+                                            </li>
+                                            <li class="drop-info__item">
+                                                <svg class="drop-info__icon"> <use xlink:href="./img/svg/sprite.svg#almond"></use> </svg>   
+                                                <div class="drop-info__desc">Зарядка</div>     
+                                                <div class="drop-info__value">2 ч</div>
+                                            </li>
+                                            <li class="drop-info__item">
+                                                <svg class="drop-info__icon"> <use xlink:href="./img/svg/sprite.svg#pw"></use> </svg>   
+                                                <div class="drop-info__desc">Вес</div>     
+                                                <div class="drop-info__value">215гр</div>
+                                            </li>
+                                            <li class="drop-info__item">
+                                                <svg class="drop-info__icon"> <use xlink:href="./img/svg/sprite.svg#garant"></use> </svg>   
+                                                <div class="drop-info__desc">Гарантия</div>     
+                                                <div class="drop-info__value">1 год</div>
+                                            </li>
+                
+                                        </ul>
+                                    </div>  
+                                  </div>    
+
+                                    <h3 class="product__title">beats solo pro. цвет «красный цитрус»</h3>
+                                    <div class="product__desc">
+                                        <p>
+                                            Беспроводные наушники Solo Pro помогают настроиться на творчество. Для этого предусмотрено два режима прослушивания: режим с активным шумоподавлением и Прозрачный режим.
+                                        </p>
+                                    </div>
+                                    <ul class="product__prop">
+                                        <li class="product__prop-desc">
+                                            <div class="product__prop-text"><p>Зарядка</p></div>
+                                            <div class="product__prop-value"><p>2 часа</p></div>
+                                        </li>
+                                        <li class="product__prop-desc">
+                                            <div class="product__prop-text"><p>Вес</p></div>
+                                            <div class="product__prop-value"><p>215 грамм</p></div>
+                                        </li>                                        
+                                    </ul>
+                                    <div class="product__order">
+                                        <div class="product__price">14 990 ₽</div>
+                                        <a href="#" class="btn btn--theme-primary">Заказать</a>
+                                    </div>
+                                </div>
+                            </li>                            
                         </ul>
                         <a href="#" class="products__arrow products__arrow-next">></a>                        
                     </div>
@@ -488,7 +553,9 @@
 </body>
 
 <script src="./scripts/jquery-3.6.1.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> 
 <script src="./scripts/hamburger.js" type="text/javascript"></script>
 <script src="./scripts/akkardeon.js" type="text/javascript"></script>
+<script src="./scripts/slider.js" type="text/javascript"></script>
 <!-- <script src="./scripts/drop-info.js" type="text/javascript"></script> -->
 </html>
