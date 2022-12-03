@@ -68,8 +68,10 @@ function modal(selector, text) {
     newItem.appendChild(ItemText);
 
     let left_modal = (document.documentElement.clientWidth / 2 - newItem.offsetWidth / 2) / document.documentElement.clientWidth * 100;
+    let top_modal = (document.documentElement.clientHeight / 2 - newItem.offsetHeight / 2) / document.documentElement.clientHeight * 100;
 
-    // // newItem.style.left='50%'; 
+    newItem.style.left=left_modal+'%'; 
+    newItem.style.top=top_modal+'%'; 
 
     const newItem_x = document.createElement('a');
     newItem_x.classList.add('modal__btn');
