@@ -3,8 +3,10 @@
 }
 
 .products{
+    position: relative;
     display: flex;
     align-items: center;
+    width: 100%;
 
     &::before{
         // display: block;
@@ -13,7 +15,7 @@
         width: rem(24px);
         height: rem(24px);
         background:#C4C4C4;
-        bottom: rem(-10px);
+        bottom: rem(-190px);
         left: 79%;
         transform: rotate(-61deg);
 
@@ -23,9 +25,10 @@
 }
 
 .products__arrow{
+    // position: absolute;
     font-size: rem(50px);
     color: black;
-    margin-top: rem(53px);
+    // margin-top: rem(53px);
 
     @include tablets{
         margin-top: rem(-370px);
@@ -39,11 +42,24 @@
 
 
 .products__arrow-prev{
+    // position: absolute;    
     margin-right: rem(28px);
+    left: 0;
+    z-index: 4;
     @include tablets{
         margin-right: 0;
     }
 }
+
+.products__arrow-next{
+    position: absolute;    
+    right: 0;
+    // margin-right: rem(28px);
+    @include tablets{
+        margin-right: 0;
+    }
+}
+
 
 .product{
     display: flex;

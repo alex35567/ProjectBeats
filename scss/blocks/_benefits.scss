@@ -18,14 +18,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: calc( 276px/$baseFontSize * 1rem);
+    // min-width: calc( 276px/$baseFontSize * 1rem);
     position: relative;    
 
     &:after{
         content: url("../img/why/separator.png");
       position: absolute;  
       top: calc( 55px/$baseFontSize * 1rem);
-      right: calc( -40px/$baseFontSize * 1rem);
+      right: rem(-24px);
       transform: translateX(50%);
     }
 
@@ -39,14 +39,15 @@
         &:after{
            display: none;
         }
-        min-width: rem(258px);        
+        // min-width: rem(258px);   
+        min-width: initial;     
     }
 
     @include phones{
         &:after{
             display: none;
          }
-         min-width: initial;
+        //  min-width: initial;
          flex-direction: row;
          margin-bottom: rem(40px);
 

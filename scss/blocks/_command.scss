@@ -3,19 +3,19 @@
 .command__title{
     font-size: rem(48px);
     line-height: rem(52px);
-    margin-bottom: 52px;
+    margin-bottom: rem(52px);
 
     @include phones{
-        font-size: 32px;
-        line-height: 36px;
-        margin-bottom: 36px;
+        font-size: rem(32px);
+        line-height: rem(36px);
+        margin-bottom: rem(36px);
     }
 
 }
 
 .command__list{
     display: flex;
-    column-gap: 20px;
+    column-gap: rem(20px);
     justify-content: space-between;    
 
     @include tablets{
@@ -30,7 +30,7 @@
 
 .command__elem{
     flex: 1;
-    min-height: 480px;  
+    min-height: rem(480px);  
     
     
     @include tablets{      
@@ -39,13 +39,13 @@
       flex-direction: column;
       align-items: center;
       width: 100%;
-      max-width: 222px;
+      max-width: rem(222px);
 
         &.active{                  
             .command__image-tablets{
-                min-height: 290px;     
-                margin-bottom: 18px;
-                margin-top: 7px;
+                min-height: rem(290px);     
+                margin-bottom: rem(18px);
+                margin-top: rem(7px);
                 // transition: height 1s;       
             }      
         }   
@@ -53,8 +53,8 @@
 
     &.active{                  
         .command__cart{
-            //height: 100px;  
-            margin-bottom: 21px;          
+            //height: rem(100px);  
+            margin-bottom: rem(21px);          
         }        
         .command__name::after{            
             transform: rotate(0deg);        
@@ -65,7 +65,7 @@
 }
 
 .command__image{
-    margin-bottom: 25px;   
+    margin-bottom: rem(25px);   
     @include tablets{      
       margin-bottom: 0;       
       display: none;     
@@ -95,7 +95,7 @@
     line-height: rem(21px);
     color: #292929;
     text-align: center;
-    margin-bottom: 11px;
+    margin-bottom: rem(11px);
 
     display: inline-block; 
     left: 50%;    
@@ -105,13 +105,13 @@
     @include tablets{
         left: 0;    
         transform: translate(0, 0);           
-        margin-bottom: 16px;
+        margin-bottom: rem(16px);
     }
 
     @include phones{
-        font-size: 21px;
-        line-height: 25px;   
-        margin-bottom: 6px;     
+        font-size: rem(21px);
+        line-height: rem(25px);   
+        margin-bottom: rem(6px);     
     }
 
 
@@ -120,14 +120,14 @@
         position: absolute;
         width: 0;
         height: 0;
-        border-left: 4px solid transparent;
-        border-right: 4px solid transparent;
-        border-bottom: 8px solid red;
+        border-left: rem(4px) solid transparent;
+        border-right: rem(4px) solid transparent;
+        border-bottom: rem(8px) solid red;
         // bottom: -2%;
         // z-index: 4;
         left: 105%;
-        margin-right: 10px;
-        top: 7px;
+        margin-right: rem(10px);
+        top: rem(7px);
         transition: transform 0.3s;
         transform: rotate(180deg);        
     }
@@ -146,7 +146,7 @@
 
     @include tablets{
         justify-content: flex-start;
-        // padding: 0 260px;
+        // padding: 0 rem(260px);
     }    
 }
 
@@ -158,19 +158,19 @@
 
 
     @include tablets{
-        margin-bottom: 6px;
+        margin-bottom: rem(6px);
     }
 
     @include phones{
-        font-size: 18px;
-        line-height: 21px;
-        margin-bottom: 13px;
+        font-size: rem(18px);
+        line-height: rem(21px);
+        margin-bottom: rem(13px);
     }
 }
 
 .command__desc{
-    font-size: 16px;
-    line-height: 19px;
+    font-size: rem(16px);
+    line-height: rem(19px);
     color: #666666;
-    margin-bottom: 13px;
+    margin-bottom: rem(13px);
 }

@@ -76,6 +76,12 @@
 
 }
 
+
+.form__input--error{
+    border-color: orange;         
+    outline: none;
+}
+
 .form__controls-wrapper{
     margin-top: calc( 31px/$baseFontSize * 1rem);
 

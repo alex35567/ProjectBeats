@@ -67,7 +67,16 @@
 }
 
 .reviews__display-inner{
-    display: flex;    
+    // display: flex;    
+    display: none;
+    // opacity: 0;        
+
+    &.active{
+       display: flex; 
+    //    opacity: 1;
+    //    transition: opacity, 0.5s;
+    }
+
 
     @include tablets{
         flex-direction: column;

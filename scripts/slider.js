@@ -3,7 +3,7 @@ $(document).ready(function(){
     var slider = $('.slider').bxSlider({
         wrapperClass:'products-section',
         pager:false,
-        controls:false
+        controls:false,        
     })
 
     $('.products__arrow-prev').click(function(e){
