@@ -1672,6 +1672,7 @@ body {
 .product__order {
   display: flex;
   column-gap: 1.4375rem;
+  align-items: center;
 }
 @media screen and (max-width: 768px) {
   .product__order {

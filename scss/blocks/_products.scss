@@ -191,6 +191,7 @@
 .product__order{
     display: flex;
     column-gap: rem(23px);
+    align-items: center;
 
     @include tablets{
         column-gap: rem(40px);
