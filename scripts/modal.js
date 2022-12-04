@@ -1,4 +1,4 @@
-$('.form__btn.btn--theme-primary').on('click', function (e) {
+$('#submit').on('click', function (e) {
     e.preventDefault();
     if ($(this).is(e.target)) {
         const form = $('.form');
@@ -14,10 +14,10 @@ $('.form__btn.btn--theme-primary').on('click', function (e) {
             }
         })
 
-        let tel=phone.val();
-        tel=tel.replace('(',''); tel=tel.replace(')','');tel=tel.replace('-','');tel=tel.replace('+7','8');
+        let tel = phone.val();
+        tel = tel.replace('(', ''); tel = tel.replace(')', ''); tel = tel.replace('-', ''); tel = tel.replace('+7', '8');
         let res = tel.match(/\D/g);
-        if (res!=null){phone.addClass('form__input--error');}
+        if (res != null) { phone.addClass('form__input--error'); }
 
         if (form.find('.form__input--error').length == 0) {
             $.ajax({
@@ -29,17 +29,17 @@ $('.form__btn.btn--theme-primary').on('click', function (e) {
                     comment: comment.val(),
                     to: to
                 },
-                success:data =>{
-                 modal(this, data.message)
+                success: data => {
+                    modal(this, data.message)
                 },
-                error:data =>{                
-                    modal(this, 'Ошибка сервера, повторите заказ')   
+                error: data => {
+                    modal(this, 'Ошибка сервера, повторите заказ')
                 }
-            })            
+            })
         } else {
             modal(this, 'Заполните обязательные поля!')
         }
- 
+
     }
 });
 
@@ -70,8 +70,8 @@ function modal(selector, text) {
     let left_modal = (document.documentElement.clientWidth / 2 - newItem.offsetWidth / 2) / document.documentElement.clientWidth * 100;
     let top_modal = (document.documentElement.clientHeight / 2 - newItem.offsetHeight / 2) / document.documentElement.clientHeight * 100;
 
-    newItem.style.left=left_modal+'%'; 
-    newItem.style.top=top_modal+'%'; 
+    newItem.style.left = left_modal + '%';
+    newItem.style.top = top_modal + '%';
 
     const newItem_x = document.createElement('a');
     newItem_x.classList.add('modal__btn');
@@ -87,6 +87,13 @@ function modal(selector, text) {
         overlay.remove();
         // selector.removeChild(newItem); 
     });
+
+    //блокировка прокрутки 
+    if (body.style.overflow.includes('hidden')){
+         body.style.overflow = 'scroll';
+    } else {
+        body.style.overflow = 'hidden';
+    }
 
 }
 

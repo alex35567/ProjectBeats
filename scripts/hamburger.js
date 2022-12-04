@@ -16,8 +16,11 @@ hamb_btn.addEventListener('click', function(e){
     header_menu.classList.toggle('active'); 
 
     //блокировка прокрутки 
-    if (body.style.overflow.includes('hidden')) body.style.overflow='scroll';
-    else body.style.overflow ='hidden';
+    if (body.style.overflow.includes('hidden')){
+        body.style.overflow = 'scroll';
+   } else {
+       body.style.overflow = 'hidden';
+   }
 
 });
 
