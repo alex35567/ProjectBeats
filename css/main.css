@@ -1826,7 +1826,6 @@ body {
   .command__image-tablets {
     display: block;
     overflow: hidden;
-    height: 0;
   }
 }
 .command__name {

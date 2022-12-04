@@ -73,12 +73,11 @@
 }
 
 .command__image-tablets{
-    display: none;
-
+    display: none;           
     @include tablets{         
         display: block;
         overflow: hidden;        
-        height: 0;        
+        // height: 0px;        
     }
 
     @include phones{
