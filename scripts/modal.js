@@ -54,8 +54,10 @@ function modal(selector, text) {
     overlay.classList.add('modal__overlay');
 
     overlay.addEventListener('click', function (e) {
-        if (e.target == overlay)
+        if (e.target == overlay){
+            body.style.overflow = 'scroll';
             overlay.remove();
+        }
     })
     newItem = document.createElement('div');
     // selector.appendChild(newItem);        
@@ -84,16 +86,14 @@ function modal(selector, text) {
     newItem_x.addEventListener('click', function (event) {
         event.preventDefault();
         // selector.removeChild(overlay);  
+        body.style.overflow = 'scroll';
         overlay.remove();
         // selector.removeChild(newItem); 
     });
 
     //блокировка прокрутки 
-    if (body.style.overflow.includes('hidden')){
-         body.style.overflow = 'scroll';
-    } else {
         body.style.overflow = 'hidden';
-    }
+
 
 }
 
