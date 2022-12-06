@@ -1936,6 +1936,27 @@ body {
 .colors-title--active {
   opacity: 1;
 }
+@media screen and (max-width: 768px) {
+  .colors-title {
+    opacity: 0;
+    top: 91px;
+    left: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .colors-title-menu {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 480px) {
+  .colors-title-menu {
+    top: 76px;
+    left: 10px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
 
 .colors {
   align-self: flex-end;
@@ -1947,6 +1968,14 @@ body {
 
 .colors__elem {
   display: flex;
+  left: 400px;
+  transition: left, 0.5s;
+}
+.colors__elem--active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .colors__elem-title {
@@ -1966,6 +1995,11 @@ body {
 .colors__elem-title--red {
   background-color: #E01F3C;
 }
+@media screen and (max-width: 480px) {
+  .colors__elem-title {
+    width: 90px;
+  }
+}
 
 .colors__text {
   margin-top: 34px;
@@ -1980,9 +2014,20 @@ body {
   overflow: hidden;
   background: rgba(51, 53, 55, 0.9);
   transition: width 0.5s;
+  z-index: 2;
 }
 .colors__cart--active {
   width: 524px;
+}
+@media screen and (max-width: 768px) {
+  .colors__cart--active {
+    width: 462px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .colors__cart--active {
+    width: 390px;
+  }
 }
 
 .colors__desc {
@@ -1994,4 +2039,14 @@ body {
   font-size: 16.0138px;
   line-height: 24px;
   padding: 31px 43px 0 38px;
+}
+@media screen and (max-width: 768px) {
+  .colors__desc {
+    width: 462px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .colors__desc {
+    width: 390px;
+  }
 }

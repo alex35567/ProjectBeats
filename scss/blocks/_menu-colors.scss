@@ -10,7 +10,7 @@
     position: relative;
 }
 
-.colors-title {    
+.colors-title {
     position: absolute;
     top: 115px;
     left: 84px;
@@ -23,9 +23,32 @@
     opacity: 0;
     transition: opacity 0.5s;
 
-    &--active{
+    &--active {
         opacity: 1;
     }
+
+    @include tablets {
+        opacity: 0;
+        top: 91px;
+        left: 40px;
+    }
+
+}
+
+
+.colors-title-menu {
+
+    @include tablets {
+        opacity: 1;
+    }
+
+    @include phones {
+        top: 76px;
+        left: 10px;
+        font-size: 32px;
+        line-height: 36px;
+    }
+
 
 }
 
@@ -39,16 +62,22 @@
 }
 
 .colors__elem {
-    display: flex;
+    display: flex;  
+    left: 400px;
+    transition: left, 0.5s;
+    
+    &--active{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
 
     // &:hover {
     //     .colors__cart {
     //         width: 524px;
     //     }
     // }
-
-
-
 }
 
 .colors__elem-title {
@@ -70,6 +99,11 @@
         background-color: #E01F3C;
     }
 
+    @include phones {
+        width: 90px;
+    }
+
+
 }
 
 
@@ -78,7 +112,7 @@
 
 .colors__text {
     margin-top: 34px;
-    font-family: $Alegreya;    
+    font-family: $Alegreya;
     font-weight: 700;
     font-size: 36px;
     line-height: 43px;
@@ -89,10 +123,23 @@
     overflow: hidden;
     background: rgba(51, 53, 55, 0.9);
     transition: width 0.5s;
+    z-index: 2;
 
-    &--active{        
-        width: 524px; 
+    &--active {
+        width: 524px;
+
+        @include tablets {
+            width: 462px;            
+        }
+
+        @include phones {
+            width: 390px;
+        }
     }
+
+
+
+
 }
 
 .colors__desc {
@@ -104,4 +151,12 @@
     font-size: 16.0138px;
     line-height: 24px;
     padding: 31px 43px 0 38px;
+
+    @include tablets {
+        width: 462px;
+    }
+
+    @include phones {
+        width: 390px;        
+    }
 }
