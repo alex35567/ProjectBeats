@@ -1920,7 +1920,7 @@ body {
 
 .colors-section {
   background-color: black;
-  background-image: url(./../../img/menu-colors/colors_background.png);
+  background-image: url(./../img/menu-colors/colors_background.png);
   background-repeat: no-repeat;
   background-position: right top;
   background-size: cover;
