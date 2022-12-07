@@ -1,0 +1,101 @@
+.player-section__title{
+    margin-bottom: rem(44px);
+
+    @include phones{
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+}
+
+.player{
+    width: 662px;
+    // width: 60%;
+
+    @include tablets{
+        width: 594px;
+        // width: 77%;
+    }
+
+    @include phones{
+        width: 394px;
+        // width: 82%;
+    }
+    // max-height: 353px;
+    // overflow: auto;
+}
+
+.player__wrapper{
+
+}
+
+.player__elem{
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.player__controls{
+    position: relative;
+    height: 35px;
+    @include tablets{
+        height: 31px;
+    }
+
+    @include phones{
+        height: 20px;
+    }
+
+    background: #151515;
+}
+
+
+.player__playback{
+    // position: relative;
+    position:absolute;
+    // margin-left: 34px;
+    width: 67%;
+    // height: 3.58px;
+    height: 11.5%;
+    background: #333333;
+    // background-color: green;
+    top: 50%;
+    transform: translate(57px, -50%);
+}
+
+.player__playback-button{
+    position: absolute;
+    background: #E01F3D;
+    border-radius: 50px;
+    border: none;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 20px;
+}
+
+
+
+.player__start{
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    // transform: translate(0,-50%);
+    transform: translate(0, -42%);
+
+    // border-left: rem(4px) solid transparent;
+    // border-right: rem(4px) solid transparent;
+    // border-bottom: rem(8px) solid red;
+    // top: 50%;
+    // transform: translate(50%,50%);
+    // left: 0;
+    // transform: rotate(90deg);     
+}
+
+.player__start-pic{
+    width: 11px;
+    height: 16px;
+    fill: white;  
+}

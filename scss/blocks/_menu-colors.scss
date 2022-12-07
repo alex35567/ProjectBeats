@@ -3,7 +3,7 @@
     background-color: black;
     background-image: url(./../img/menu-colors/colors_background.png);
     background-repeat: no-repeat;
-    // background-position: -434px top;
+    // background-position: rem(-434px) top;
     background-position: right top;
     background-size: cover;
     justify-content: flex-start;
@@ -12,12 +12,12 @@
 
 .colors-title {
     position: absolute;
-    top: 115px;
-    left: 84px;
+    top: rem(115px);
+    left: rem(84px);
 
     font-weight: 700;
-    font-size: 48px;
-    line-height: 52px;
+    font-size: rem(48px);
+    line-height: rem(52px);
     text-transform: uppercase;
     color: white;
     opacity: 0;
@@ -29,8 +29,8 @@
 
     @include tablets {
         opacity: 0;
-        top: 91px;
-        left: 40px;
+        top: rem(91px);
+        left: rem(40px);
     }
 
 }
@@ -43,10 +43,10 @@
     }
 
     @include phones {
-        top: 76px;
-        left: 10px;
-        font-size: 32px;
-        line-height: 36px;
+        top: rem(76px);
+        left: rem(10px);
+        font-size: rem(32px);
+        line-height: rem(36px);
     }
 
 
@@ -63,7 +63,7 @@
 
 .colors__elem {
     display: flex;  
-    left: 400px;
+    left: rem(400px);
     transition: left, 0.5s;
     
     &--active{
@@ -75,7 +75,7 @@
 
     // &:hover {
     //     .colors__cart {
-    //         width: 524px;
+    //         width: rem(524px);
     //     }
     // }
 }
@@ -83,7 +83,7 @@
 .colors__elem-title {
     display: flex;
     align-items: center;
-    width: 102px;
+    width: rem(102px);
     height: 100%;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -100,7 +100,7 @@
     }
 
     @include phones {
-        width: 90px;
+        width: rem(90px);
     }
 
 
@@ -111,11 +111,11 @@
 
 
 .colors__text {
-    margin-top: 34px;
+    margin-top: rem(34px);
     font-family: $Alegreya;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 43px;
+    font-size: rem(36px);
+    line-height: rem(43px);
 }
 
 .colors__cart {
@@ -126,14 +126,14 @@
     z-index: 2;
 
     &--active {
-        width: 524px;
+        width: rem(524px);
 
         @include tablets {
-            width: 462px;            
+            width: rem(462px);            
         }
 
         @include phones {
-            width: 390px;
+            width: rem(390px);
         }
     }
 
@@ -143,20 +143,20 @@
 }
 
 .colors__desc {
-    width: 524px;
+    width: rem(524px);
     height: 100%;
     color: white;
     font-family: $Alegreya;
     font-weight: 400;
-    font-size: 16.0138px;
-    line-height: 24px;
-    padding: 31px 43px 0 38px;
+    font-size: rem(16px);
+    line-height: rem(24px);
+    padding: rem(31px) rem(43px) 0 rem(38px);
 
     @include tablets {
-        width: 462px;
+        width: rem(462px);
     }
 
     @include phones {
-        width: 390px;        
+        width: rem(390px);        
     }
 }
