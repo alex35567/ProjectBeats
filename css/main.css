@@ -2083,6 +2083,10 @@ body {
   }
 }
 
+.player__wrapper {
+  display: flex;
+}
+
 .player__elem {
   width: 100%;
   height: auto;
@@ -2090,7 +2094,7 @@ body {
 }
 
 .player__controls {
-  position: relative;
+  display: flex;
   height: 35px;
   background: #151515;
 }
@@ -2105,13 +2109,24 @@ body {
   }
 }
 
+.player__start {
+  margin-left: 17px;
+  margin-right: 57px;
+}
+
+.player__start-pic {
+  width: 13px;
+  height: 16px;
+  fill: white;
+}
+
 .player__playback {
-  position: absolute;
+  position: relative;
   width: 67%;
   height: 11.5%;
   background: #333333;
   top: 50%;
-  transform: translate(57px, -50%);
+  transform: translate(0, -50%);
 }
 
 .player__playback-button {
@@ -2127,15 +2142,7 @@ body {
   left: 20px;
 }
 
-.player__start {
-  position: absolute;
-  left: 11px;
-  top: 50%;
-  transform: translate(0, -42%);
-}
-
-.player__start-pic {
-  width: 11px;
+.player__volume-pic {
   height: 16px;
   fill: white;
 }
