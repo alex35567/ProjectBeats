@@ -1,13 +1,15 @@
 
 .section{
-    height: 100vh;    
+    // height: 100vh;    
+    height: 100%;
     width: 100%;
-    min-height: calc( 622px/$baseFontSize * 1rem);    
+    // min-height: calc( 622px/$baseFontSize * 1rem);    
     display: flex;
     flex-direction: column;
     justify-content: center;    
     align-items: center;
-    position: relative;
+    // position: relative;
+    // transform: translate(0px, -50%);
 }
 
 .section__title{

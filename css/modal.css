@@ -12,7 +12,7 @@
 
 .modal__text{
     font-size: 18px;
-    line-height: rem(24px);
+    line-height: 24px;
     font-weight: 400;
     font-family: 'Play', Helvetica, Arial, sans-serif;
     text-transform: none;    

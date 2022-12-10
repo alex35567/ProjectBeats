@@ -12,7 +12,8 @@
 <body>
 
     <div class="wrapper">
-      <section class="intro section container-gray">        
+        <div class="main">
+            <section fixed-menu-theme="dark" data-section-id="intro" class="intro section container-gray">        
             <div class="container container-intro">
                 <header class="header">
                     <div class="header__logo">                    
@@ -25,25 +26,25 @@
                     <nav class="header__menu">
                         <ul class="header__items">
                             <li class="header__item">
-                                <a href="#" class="header__menu-link">О нас</a>
+                                <a href="#" data-scroll-to="headline" class="header__menu-link">О нас</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__menu-link">Наушники</a>
+                                <a href="#" data-scroll-to="products" class="header__menu-link">Наушники</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__menu-link">Команда</a>
+                                <a href="#" data-scroll-to="command" class="header__menu-link">Команда</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__menu-link">Цвета</a>
+                                <a href="#" data-scroll-to="colors" class="header__menu-link">Цвета</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__menu-link">Отзывы</a>
+                                <a href="#" data-scroll-to="reviews" class="header__menu-link">Отзывы</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__menu-link">Как мы работаем</a>
+                                <a href="#" data-scroll-to="player" class="header__menu-link">Как мы работаем</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__menu-link">Контакты</a>
+                                <a href="#" data-scroll-to="contacts" class="header__menu-link">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -93,9 +94,9 @@
         
             
 
-    </section>
+            </section>
                     
-            <section class="section headline">
+            <section fixed-menu-theme="dark" data-section-id="headline" class="section headline">
                 <div class="container">    
                         <h2 class="section__title headline__title">почему beats solo 3?</h2>
                         <div class="headline__subtitle">
@@ -162,7 +163,7 @@
                 </div>        
             </section>
             
-            <section class="section products-section">
+            <section fixed-menu-theme="dark" data-section-id="products" class="section products-section">
                 <div class="container">
                     <div class="products">
                         <a href="#" class="products__arrow products__arrow-prev"><</a>
@@ -299,7 +300,7 @@
                 </div>
             </section>
 
-            <section class="section command-section">
+            <section fixed-menu-theme="dark" data-section-id="command" class="section command-section">
                 <div class="container">
                     <div class="command">
                         <h2 class="section__title command__title">команда</h2>
@@ -362,7 +363,7 @@
             </section>    
 
 
-            <section class="section colors-section">
+            <section fixed-menu-theme="light" data-section-id="colors" class="section colors-section">
                 <!-- <div class="container"> -->
                     <h2 class="colors-title colors-title--active">цвета</h2>
                     <h2 class="colors-title-menu colors-title">меню</h2>
@@ -419,7 +420,7 @@
             </section>  
 
 
-            <section class="section reviews-section">
+            <section fixed-menu-theme="dark" data-section-id="reviews" class="section reviews-section">
                     <div class="container">                
                        <h2 class="section__title reviews-section__title">Отзывы</h2> 
                        <div class="reviews">
@@ -488,35 +489,48 @@
                     </div>     
              </section>
 
-             <section class="section player-section">
-                <div class="container">
-                  <h2 class="section__title player-section__title">Как мы работаем</h2>
-                  <div class="player-section__container">
-                    <div class="player">
-                      <div class="player__wrapper">
-                        <div id="yt-player" class="player__elem"></div>
-                        <div class="player__splash"></div>
-                      </div>
-                      <div class="player__controls">
-                        <button class="player__start">
-                            <svg class="player__start-pic"> <use xlink:href="./img/svg/sprite.svg#playBtn"></use> </svg>                            
-                        </button>
-                        <div class="player__playback">
-                          <button class="player__playback-button"></button>
-                        </div>
-                        <div class="player__volume">
-                            <svg class="player__volume-pic"> <use xlink:href="./img/svg/sprite.svg#speakerBtn"></use> </svg>                            
-                        </div>
-                        <div class="player__vol-control">
+             <section fixed-menu-theme="dark" data-section-id="player" class="section player-section">
+                <div class="container video__container">
+                  <h2 class="section__title player-section__title">Как мы работаем</h2>                  
+                    <div class="player__wrapper"> 
+                        
+                        <div class="player">                        
+                            <video src="./video/video.mp4" id="player" class="player__source" poster="./img/player/player.png"> </video>                                             
+                            <source src="./video/video.mp4" type="video/mp4">
+                            <button class="player__btn">
+                                  <svg class="play player__btn-img"> <use xlink:href="./img/svg/sprite.svg#playBtn"></use> </svg>   
+                                  <!-- <img src="./img/svg/sprite.svg#playBtn" alt="play" class="play player__btn-img"> -->
+                            </button>
+                        </div>                    
+
+                        <div class="player__toolbar">
+
+                            <div class="duration">
+                                <div class="duration__btn-wrap">
+                                    <button class="play duration__img"></button>
+                                </div>
+                                <div class="duration__length-wrap">
+                                    <input type="range" class="duration__length" id="durationLevel">
+                                </div>                            
+                            </div>
+
+                            <div class="sound">
+                                <button class="sound__btn" id="soundBtn">
+                                    <svg class="sound__mic" id="dynamic"> <use xlink:href="./img/svg/sprite.svg#speakerBtn"></use> </svg>   
+                                    <!-- <img src="./img/svg/sprite.svg#speakerBtn" alt="play" class="sound__mic" id="dynamic">                                 -->
+                                </button>
+                                <div class="sound__volume">
+                                    <input type="range" class="sound__length duration__length duration__length--other" id="micLevel">
+                                </div>
+                            </div>
                             
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
 
-            <section class="section order-section container-black">                         
+                    </div>
+                </div>
+             </section>
+
+            <section fixed-menu-theme="light" data-section-id="order" class="section order-section container-black">                         
                     <div class="container">
                         <h2 class="section__title order-section__title">Закажите доставку</h2>
                         <form class="form">
@@ -607,7 +621,7 @@
                     </div> 
             </section>        
         
-        <section class="section container-map">
+            <section fixed-menu-theme="dark" data-section-id="contacts" class="section container-map">
             <!-- <img src="./img/map/map.png" alt="Map" class="container-map__pic"> -->
             <div id="map"></div>
 
@@ -661,30 +675,33 @@
                     
                 </div>
             </footer>
+            </section>
         </div>
-
 
     </div>
 
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
-         <li class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link"></a></li> 
-         <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li> 
-         <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li> 
-         <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li> 
-         <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li> 
-         <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li> 
-         <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li> 
-         <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li> 
-         <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li> 
+         <li data-scroll-to="intro" class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link"></a></li> 
+         <li data-scroll-to="headline" class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li> 
+         <li data-scroll-to="products" class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li> 
+         <li data-scroll-to="command" class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li> 
+         <li data-scroll-to="colors" class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li> 
+         <li data-scroll-to="reviews" class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li> 
+         <li data-scroll-to="player" class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li> 
+         <li data-scroll-to="order" class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li> 
+         <li data-scroll-to="contacts" class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li> 
         </ul>
     </nav>
 
 </body>
 
-<script src="./scripts/jquery-3.6.1.min.js" type="text/javascript"></script>
+<script src="./scripts/jquery-3.6.1.min.js" type="text/javascript"></script>\
+<script src="./scripts/jquery.touchSwipe.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> 
+
 <script src="./scripts/hamburger.js" type="text/javascript"></script>
 <script src="./scripts/akkardeon.js" type="text/javascript"></script>
 <script src="./scripts/slider.js" type="text/javascript"></script>
@@ -692,7 +709,8 @@
 <script src="./scripts/modal.js" type="text/javascript"></script>
 <script src="./scripts/menu-colors.js" type="text/javascript"></script>
 <script src="./scripts/map.js"></script>
-<script src="https://www.youtube.com/iframe_api"></script>
 <script src="./scripts/player.js"></script>
+<script src="./scripts/ops.js"></script>
+
 <!-- <script src="./scripts/drop-info.js" type="text/javascript"></script> -->
 </html>

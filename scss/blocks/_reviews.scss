@@ -10,6 +10,7 @@
 
 .reviews-section{
     // display: flex;
+    position: relative;
     &:before {
         display: block;
         content: " ";

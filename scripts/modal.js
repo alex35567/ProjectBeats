@@ -43,7 +43,6 @@ $('#submit').on('click', function (e) {
     }
 });
 
-
 function modal(selector, text) {
 
     let overlay = null;
@@ -51,7 +50,13 @@ function modal(selector, text) {
 
     overlay = document.createElement('div');
     selector.appendChild(overlay);
+    
+    //мегакостыль - смещает подальное окно вслед за onePageScroll...
     overlay.classList.add('modal__overlay');
+    let m = $('.main').css('transform');
+    m = m.replace('-','');
+    $('.modal__overlay').css('transform',m);
+    //..........
 
     overlay.addEventListener('click', function (e) {
         if (e.target == overlay){
