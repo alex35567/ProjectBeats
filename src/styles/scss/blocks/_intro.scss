@@ -1,6 +1,6 @@
 
 .container-intro{        
-    background: url(./../img/intro/beats1.png) right  -1px top 62% /54% auto no-repeat ;
+    background: url(./img/intro/beats1.png) right  -1px top 62% /54% auto no-repeat ;
     color: $colorFontTitle;
     justify-content: space-between;
     align-items: flex-start;
@@ -67,7 +67,7 @@
         &::before{            
             content: "";                                    
             height: rem(323px);
-            background: url(./../img/intro/beats_tablets.png) center center/ contain no-repeat;
+            background: url(./img/intro/beats_tablets.png) center center/ contain no-repeat;
             display: block;
             margin-bottom: rem(67px);                                   
             width: 100%;
@@ -95,7 +95,7 @@
         margin-bottom: rem(6px);                   
 
         // &::before{            
-        //     content: url(./../img/intro/beats_tablets.png); 
+        //     content: url(./img/intro/beats_tablets.png); 
         //     display: block;
         //     margin-bottom: rem(54px);                                   
         // }       

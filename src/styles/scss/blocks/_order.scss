@@ -2,12 +2,12 @@
     background: #181818;;
     width: 100%;
     color: white;
-    background: url(./../img/order/cta.png) center center no-repeat;
+    background: url(./img/order/cta.png) center center no-repeat;
     background-size: cover;
     position: relative;
 
     &:before {
-        content: url(./../img/order/Polygon2.png);
+        content: url(./img/order/Polygon2.png);
         position: absolute;
         width:  rem(35px);
         height:  rem(35px);

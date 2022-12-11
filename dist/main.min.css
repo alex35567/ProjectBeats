@@ -905,7 +905,7 @@ body {
   will-change: transform; }
 
 /* .wrapper--main{
-    background: url(../../img/hero.jpg) center top no-repeat, url(../../img/bottom_back.jpg) center bottom rem(149px) no-repeat;
+    background: url(../img/hero.jpg) center top no-repeat, url(../img/bottom_back.jpg) center bottom rem(149px) no-repeat;
 }
 
 .wrapper__content{      
@@ -1033,7 +1033,7 @@ body {
   white-space: nowrap; }
 
 .container-intro {
-  background: url(./../img/intro/beats1.png) right -1px top 62%/54% auto no-repeat;
+  background: url(./img/intro/beats1.png) right -1px top 62%/54% auto no-repeat;
   color: #292929;
   justify-content: space-between;
   align-items: flex-start; }
@@ -1078,7 +1078,7 @@ body {
     .intro-text::before {
       content: "";
       height: 20.1875rem;
-      background: url(./../img/intro/beats_tablets.png) center center/contain no-repeat;
+      background: url(./img/intro/beats_tablets.png) center center/contain no-repeat;
       display: block;
       margin-bottom: 4.1875rem;
       width: 100%; } }
@@ -1522,11 +1522,11 @@ body {
   background: #181818;
   width: 100%;
   color: white;
-  background: url(./../img/order/cta.png) center center no-repeat;
+  background: url(./img/order/cta.png) center center no-repeat;
   background-size: cover;
   position: relative; }
   .container-black:before {
-    content: url(./../img/order/Polygon2.png);
+    content: url(./img/order/Polygon2.png);
     position: absolute;
     width: 2.1875rem;
     height: 2.1875rem;
@@ -1552,7 +1552,7 @@ body {
   .radio--checkbox .radio__visible {
     border-radius: 0; }
     .radio--checkbox .radio__visible::before {
-      background: url(./../img/order/checkmark.png) center center no-repeat; }
+      background: url(./img/order/checkmark.png) center center no-repeat; }
 
 .radio__elem {
   display: none; }
@@ -2081,7 +2081,7 @@ body {
 
 .colors-section {
   background-color: black;
-  background-image: url(./../img/menu-colors/colors_background.png);
+  background-image: url(./img/menu-colors/colors_background.png);
   background-repeat: no-repeat;
   background-position: right top;
   background-size: cover;
