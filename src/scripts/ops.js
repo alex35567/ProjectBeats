@@ -112,6 +112,7 @@ $(window).on('wheel', function (e) {
 })
 
 
+
 if (isMobile) {
 
     // https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
