@@ -1,0 +1,64 @@
+.headline{  
+    position: relative;
+    &::before{
+        // display: block;
+        content:"  ";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left:  rem(17px) solid transparent;
+        border-right:  rem(17px) solid transparent;
+        border-bottom:  rem(34px) solid red;
+        // background:#C4C4C4;
+        bottom: -2%;        
+        z-index: 4;
+        left: 9%;
+        transform: rotate(227deg);
+
+    }
+
+    @include phones{
+        &::before{
+            // bottom: 23%;        
+            left: 7%;    
+        }
+    }
+
+
+}
+
+.headline__title{
+    margin-bottom:  rem(17px);  //rem(8px)
+    @include tablets{
+        margin-bottom:  rem(10px);  //rem(8px)
+    }
+
+    @include phones{
+        margin-bottom: rem(12px);
+        font-size: rem(32px);
+        line-height: rem(36px);
+    }
+}
+
+.headline__subtitle{
+    max-width: 55%;  
+    text-align: center;
+    margin-bottom:  rem(61px);//rem(57px);
+    line-height: 1.18;
+
+    @include tablets{
+        max-width: 75%;
+        margin-bottom:  rem(55px);//rem(57px);
+
+    }
+
+    @include phones{
+        max-width: 100%;
+        margin-bottom: rem(53px);
+
+    }
+     
+
+
+
+}

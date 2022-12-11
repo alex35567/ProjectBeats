@@ -1,0 +1,147 @@
+
+.container--footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: rem(18px) 0;
+
+    @include tablets{
+        // padding: rem(30px);
+        padding-left: rem(30px);
+        padding-right: rem(36px);
+    }
+
+
+    @include phones{
+        flex-direction: column;
+    }
+
+
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    background-color: white;
+
+}
+
+.contacts-footer{
+    flex-direction: column;       
+    align-items: flex-start;
+    @include phones{
+        align-items: center;
+    }
+
+}
+
+.contacts__footer-tel
+{
+    line-height:  rem(21px);
+
+    @include phones{
+        margin-bottom: rem(19px);
+    }
+
+}
+
+.contacts__desc{
+    font-size:  rem(18px);
+    line-height:  rem(24px);
+    text-align: center;
+
+    @include phones{
+        margin-bottom: rem(12px);
+    }
+
+}
+
+    .footer__col {
+        display: flex;
+        align-items: center;
+    }
+
+    // .footer__col--right-align {
+    //     justify-content: flex-end;
+    // }
+
+    .social {
+        /* position: absolute; */        
+        /* top: 31px; */
+        /* right: 257px; */
+    }
+
+    .social__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social__item {
+         align-items: center;
+        text-decoration: none;
+        margin-right: rem(13px);
+    }
+    .social__item:last-child {
+        margin-right: rem(0px);
+    }
+
+    .social__icon{
+        fill:#B3B3B3;
+        width: rem(30px);
+        height:  rem(30px);  
+        transition: 0.5s;      
+
+        &:hover{
+            fill: black;
+        }
+
+        &--active{
+            fill: black;
+        }
+    }
+
+
+    // .social__ref {
+    //     width:  30px;
+    //     height:  30px;
+    //     padding:  0px  36px  18px  rem(0px);
+    //     border-radius: 50%;
+    //     position: relative;
+
+    //     &::after {
+    //         content: '';
+    //         display: block;
+    //         position: absolute;
+    //         top: 50%;
+    //         left: 50%;
+    //         transform: translate(-50%, -50%);
+    //         width:  30px;
+    //         height:  30px;     
+    //         opacity: 0.5;   
+    //         transition: 0.5s;
+    //      }
+
+    //      &:before {
+    //         content: '';
+    //         display: block;
+    //         position: absolute;
+    //         top: 50%;
+    //         left: 50%;
+    //         transform: translate(-50%, -50%);
+    //         width:  30px;
+    //         height:  30px;        
+    //         opacity: 0;
+    //         transition: 0.5s;
+    //      }
+    
+
+ 
+    
+
+
+
+  

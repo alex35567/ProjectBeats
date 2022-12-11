@@ -1,0 +1,153 @@
+
+.container-intro{        
+    background: url(./../img/intro/beats1.png) right  -1px top 62% /54% auto no-repeat ;
+    color: $colorFontTitle;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include tablets{
+        background: none;
+    }
+
+}
+
+.intro{
+    // display: flex;\
+    flex-direction: row;
+    align-items: stretch;    
+    padding-top:  rem(24px);
+    padding-bottom:  rem(66px);
+    // position: relative;    
+
+        &::before{
+            // display: block;
+            content:"  ";
+            position: absolute;
+            width:  rem(46px);
+            height:  rem(10px);
+            background:#C4C4C4;
+            bottom:  rem(-3px);        
+            left: 93%;
+            transform: rotate(-45deg);
+
+        }
+
+        @include tablets{
+            padding-top: rem(37px);
+        }
+
+        @include phones{
+            padding-top: rem(12px);
+
+            &::before{
+                // bottom: rem(33px);
+                left: 81%;   
+            }
+    
+        }
+    
+
+  }
+
+.intro__features.features{
+    @include tablets{
+        display: none;
+    }
+
+}
+
+.intro-text{
+    @include tablets{        
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &::before{            
+            content: "";                                    
+            height: rem(323px);
+            background: url(./../img/intro/beats_tablets.png) center center/ contain no-repeat;
+            display: block;
+            margin-bottom: rem(67px);                                   
+            width: 100%;
+        }  
+
+    }
+
+    @include phones{
+        &::before{  
+            margin-bottom: rem(62px);                                   
+        }
+    }
+
+}
+
+.intro-text__title{
+    max-width: 43%;
+    margin-bottom:  rem(17px);
+    text-transform: uppercase;
+    line-height: 1.1;
+
+    @include tablets{
+        max-width: 93%;
+        text-align: center;
+        margin-bottom: rem(6px);                   
+
+        // &::before{            
+        //     content: url(./../img/intro/beats_tablets.png); 
+        //     display: block;
+        //     margin-bottom: rem(54px);                                   
+        // }       
+    }
+
+    @include phones{        
+        font-size: rem(32px);         
+        line-height: rem(36px);  
+        max-width: 83%;    
+        margin-bottom: rem(14px);           
+      }
+    
+}
+
+.intro-text__desc{
+    max-width: 36%;
+    margin-bottom:  rem(34px);
+    font-size:  rem(21px);
+    font-family: $Alegreya;
+    line-height:1.3;
+
+    @include tablets{
+        max-width: 55%;
+        margin-bottom:  rem(27px);          
+        text-align: center;
+        line-height: rem(25px);
+
+    }
+    @include phones{
+        max-width: 77%;
+        line-height: rem(20px);
+        margin-bottom: rem(32px);
+        }
+}
+
+.features{
+    display: flex;
+    gap:  rem(8px);
+}
+
+
+.feature{
+    display: flex;
+    gap:  rem(10px);    
+}
+
+.feature__pic{
+    width:  rem(41px);
+    height:  rem(41px);
+}
+
+.feature__desc{
+    max-width:  rem(114px);
+    line-height: 112%;
+}

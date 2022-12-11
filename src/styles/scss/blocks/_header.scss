@@ -1,0 +1,134 @@
+
+.header{
+    display: flex;
+    // align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right:  rem(25px);
+    width:100%;
+
+    @include tablets{     
+        padding-right: rem(5px);
+    }
+
+    @include phones{
+        padding-right: rem(5px);
+     
+    }
+    // width:915px;
+}
+
+.header__pic{
+    width: rem(39px);
+    height: rem(39px);
+    fill: #E01F3D;
+}
+
+
+.header__menu {
+
+    margin: 0 rem(30px);
+    padding-top: rem(9px);    
+     
+    @include tablets{
+        // display: none;    
+        opacity: 0;    
+        left:-100%;    
+        position: fixed;   
+        z-index: 4;   //это для того чтобы кнопка была над менюшкой....      
+        width: 100%;                    
+        top: 0;
+        height: 100vh;
+        margin: 0;
+        display: flex;            
+        justify-content: center;
+        align-items: center;
+        background-color: #313131;  
+        color: white; 
+        transition: left 0.4s, opacity 0.4s;        
+
+        &.active{
+            opacity: 1;         
+            left: 0;  
+        }
+
+    }
+
+    // @include phones{
+    //     display: none;
+    // }
+
+}
+
+
+.contacts.header__contacts{
+
+    padding-top: rem(9px);    
+
+    @include tablets{
+        display: none;
+    }
+
+    @include phones{
+        display: none;
+    }
+
+}
+
+
+.header__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // gap:  27px;       
+    column-gap:  rem(27px);
+    row-gap:  rem(18px);
+
+    @include tablets{
+        flex-direction: column;
+        align-items: center;        
+        gap: 0;
+        padding: rem(135px) rem(234px) rem(328px);
+    }
+    
+    @include phones{   
+        padding: rem(135px) rem(90px) rem(135px);
+    }
+
+}
+
+
+
+.header__menu-link{
+    font-family: $Alegreya; 
+    font-size: rem(18px);
+    white-space: nowrap;
+    &:hover{
+        color: #dfb56d;
+    }     
+
+    @include tablets{
+        font-size: rem(36px);
+        line-height: rem(72px);
+        font-family: $Play;
+    }
+
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+}
+
+.contacts__pic{
+    width:  rem(14px);
+    height:  rem(14px);
+    margin-right:  rem(6px);
+    flex-shrink: 0;
+}
+
+.contacts__tel{
+    font-size:  rem(18px);
+    line-height:  rem(18px);
+    white-space: nowrap;
+}

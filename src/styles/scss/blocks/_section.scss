@@ -1,0 +1,21 @@
+
+.section{
+    // height: 100vh;    
+    height: 100%;
+    width: 100%;
+    // min-height:  622px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    // position: relative;
+    // transform: translate(0px, -50%);
+}
+
+.section__title{
+    font-weight: bold;    
+    text-transform: uppercase;
+    text-align: center;
+    color: $colorFontTitle;
+    line-height: rem(52px);
+}

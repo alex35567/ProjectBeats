@@ -1,0 +1,22 @@
+// (?!rem\()-?\d+px(?!\))      rem($0)
+
+
+@function rem($px){
+    $result: ($px / $baseFontSize) + 0rem;
+    @return $result;
+    // @return $px;
+}
+
+
+@mixin tablets{
+    @media screen and (max-width: $tablets) {
+        @content;
+    }
+}
+
+@mixin phones{
+    @media screen and (max-width: $phones) {
+        @content;
+    }
+}
+

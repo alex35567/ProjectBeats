@@ -1,0 +1,61 @@
+
+.benefits{
+    display: flex;
+    column-gap:  rem(55px);
+    @include tablets{
+        column-gap: 0;
+    }
+
+    @include phones{
+        // column-gap: 0;
+        flex-direction: column;
+        // padding-left: rem(43px);
+    }
+
+}
+
+.benefits__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // min-width:  276px;
+    position: relative;    
+
+    &:after{
+        content: url("../img/why/separator.png");
+      position: absolute;  
+      top:  rem(55px);
+      right: rem(-24px);
+      transform: translateX(50%);
+    }
+
+    &:last-child{
+        &:after{
+            display: none;
+        }
+    }
+
+    @include tablets{
+        &:after{
+           display: none;
+        }
+        // min-width: rem(258px);   
+        min-width: initial;     
+    }
+
+    @include phones{
+        &:after{
+            display: none;
+         }
+        //  min-width: initial;
+         flex-direction: row;
+         margin-bottom: rem(40px);
+
+ 
+    }
+
+
+}
+
+
+
