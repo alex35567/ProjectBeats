@@ -61,10 +61,10 @@ task('styles', () => {
     .pipe(reload({ stream: true }));
 });
 
-const libs = [
-  'node_modules/jquery/dist/jquery.js',
-  'src/scripts/*.js'
-];
+// const libs = [
+//   'node_modules/jquery/dist/jquery.js',
+//   'src/scripts/*.js'
+// ];
 
 task('scripts', () => {
   return src([...JS_LIBS, 'src/scripts/*.js'])
