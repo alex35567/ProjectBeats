@@ -28,7 +28,7 @@ function rm_Hamburger() {
     const hamb_elems = Array.from(document.getElementsByClassName('hamburger__plank'));
     // убираем крестик
     hamb_elems.forEach(function (elem, i) {
-        elem.classList.toggle('plank-' + (i + 1).toString());
+        elem.classList.remove('plank-' + (i + 1).toString());
     }); 
     
     $('.header__menu').removeClass('active');
