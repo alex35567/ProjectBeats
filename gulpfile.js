@@ -1,7 +1,7 @@
 const { src, dest, task, series, watch, parallel } = require("gulp");
 const rm = require('gulp-rm');
 // const sass = require('gulp-sass');
-const sass = require('gulp-sass')(require('sass'));
+const sass = require('gulp-sass')(require('node-sass'));
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
@@ -16,6 +16,7 @@ const uglify = require('gulp-uglify');
 const svgo = require('gulp-svgo');
 const svgSprite = require('gulp-svg-sprite');
 const gulpif = require('gulp-if');
+const fileSync = require('gulp-file-sync');
 
 const env = process.env.NODE_ENV;
 
@@ -23,8 +24,14 @@ const { SRC_PATH, DIST_PATH, STYLE_LIBS, JS_LIBS } = require('./gulp.config');
 
 sass.compiler = require('node-sass');
 
+const rem_files = [
+  `${DIST_PATH}/**/*`,
+  `!${DIST_PATH}/video/*.*`,
+  `!${DIST_PATH}/img/*.*`
+];
+
 task('clean', () => {
-  return src(`${DIST_PATH}/**/*`, { read: false })
+  return src(rem_files, { read: false })
     .pipe(rm())
 })
 
@@ -34,13 +41,18 @@ task('copy:html', () => {
     .pipe(reload({ stream: true }));
 })
 
+const res_files = [
+  `${DIST_PATH}/video/*.*`,
+  `${DIST_PATH}/img/*.*`
+];
+
 task('copy:img', () => {
   return src(`${SRC_PATH}/img/**/*.*`)
-    // .on('data', function (file) {
-    //   console.log(file)
-    // })
-    .pipe(dest(`${DIST_PATH}/img/`))
-    .pipe(reload({ stream: true }));
+    .on('data', function (file) {
+      console.log(file)
+        .pipe(dest(`${DIST_PATH}/img/`))
+        .pipe(reload({ stream: true }));
+    })
 })
 
 task('styles', () => {
@@ -114,13 +126,21 @@ task('watch', () => {
   watch('./src/*.html', series('copy:html'));
   watch('./src/scripts/*.js', series('scripts'));
   watch('./src/images/icons/*.svg', series('icons'));
+  watch('./src/*.*',
+    fileSync(`${SRC_PATH}/video`, `${DIST_PATH}/video`, { recursive: false }),
+  );
+  watch('./src/*.*',    
+    fileSync(`${SRC_PATH}/img`, `${DIST_PATH}/img`, { recursive: true })
+  );
+
 });
 
 
 task('default',
   series(
     'clean',
-    parallel('copy:html', 'copy:img', 'styles', 'scripts', 'icons'),
+    parallel('copy:html', //'copy:img,'
+      'styles', 'scripts', 'icons'),
     parallel('watch', 'server')
   )
 );

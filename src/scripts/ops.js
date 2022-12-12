@@ -76,6 +76,8 @@ $('[data-scroll-to]').click(e => {
     const $this = $(e.currentTarget);
     const target = $this.attr('data-scroll-to');
     const reqSection = $(`[data-section-id=${target}]`);
+    
+    show_hamburger();
 
     performTransition(reqSection.index());
 })
