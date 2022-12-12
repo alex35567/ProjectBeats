@@ -11,7 +11,7 @@ function show_hamburger() {
     // делаем крестик
     hamb_elems.forEach(function (elem, i) {
         elem.classList.toggle('plank-' + (i + 1).toString());
-    });    
+    });
     //показвает меню
     header_menu.classList.toggle('active');
 
@@ -24,7 +24,13 @@ function show_hamburger() {
 }
 
 
-function rm_Hamburger(){
+function rm_Hamburger() {
+    const hamb_elems = Array.from(document.getElementsByClassName('hamburger__plank'));
+    // убираем крестик
+    hamb_elems.forEach(function (elem, i) {
+        elem.classList.toggle('plank-' + (i + 1).toString());
+    }); 
+    
     $('.header__menu').removeClass('active');
     document.querySelector('body').style.overflow = 'scroll';
 }
