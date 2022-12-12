@@ -14,6 +14,8 @@ $(document).ready(function () {
     $('.colors__elem--active').removeClass('colors__elem--active');
     $('.colors__desc').css('width','');  
 
+    rm_Hamburger();
+    
   })
 
   let e_command = new Event("click");
